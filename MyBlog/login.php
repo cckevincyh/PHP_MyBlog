@@ -40,13 +40,13 @@
             <form class="bootstrap-admin-login-form">
                 <div class="form-group">
                     <label for="username">账&nbsp;号</label>
-                    <input type="text" class="form-control" id="username" placeholder="学号"/>
+                    <input type="text" class="form-control" id="username" placeholder="请输入账号"/>
                     <label class="control-label" for="username" style="display:none;"></label>
                 </div>
                 <div class="form-group">
                     <label  for="password">密&nbsp;码</label>
-                    <input type="password" class="form-control" id="password" placeholder="密码"/>
-                    <label class="control-label" for="username" style="display:none;"></label>
+                    <input type="password" class="form-control" id="password" placeholder="请输入密码"/>
+                    <label class="control-label" for="password" style="display:none;"></label>
                 </div>
                 <input type="button" class="btn btn-lg btn-primary" id="login_submit" value="登&nbsp;&nbsp;&nbsp;&nbsp;录"/>
             </form>

@@ -1,35 +1,29 @@
 $(function () {
     $('#login_submit').click(function () {
-        var role = $("#role").val();
         if (!validLogin()) {
             return;
         }
 
         $.ajax({
             type: 'POST',
-            url: '/library/login',
+            url: 'index.php?c=Login&a=login',
             cache: false,
             data: {
                 username: $.trim($("#username").val()),
                 password: $.trim($("#password").val()),
-                role: $("#role").val()
             },
             success: function (data) {
                 if (data == 1) {
-                    if (role == "1") {//学生
-                        window.location.href = "/library/student";
-                    } else {//管理员
-                        window.location.href = "/library/admin";
-                    }
+                    window.location.href = "index.php";
+
                 } else if (data == 0) {
                     showInfo("登录失败，请重试");
                 } else if (data == -1) {
-                    showInfo("账号不存在");
-                } else if (data == -2) {
-                    showInfo("密码错误");
-                } else {
+                    showInfo("用户名或密码错误");
+                }  else {
                     showInfo("登录失败，请重试");
                 }
+
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 showInfo("登录失败，请重试");
