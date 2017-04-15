@@ -1,0 +1,56 @@
+.panel_Search{
+	margin-top: 20px;
+	width: 300px;
+	border-style:solid;
+    border-color:#D5D5D5;
+}
+.panel_Category{
+	margin-top: auto;
+	width: 300px;
+	border-style:solid;
+    border-color:#D5D5D5;
+}
+
+.panel_head{
+	
+	margin-top: auto;
+	background:#D5D5D5;
+	width: auto;
+	
+}
+
+/*搜索图片*/
+.btnSubmit{
+	background:url("/MyBlog/img/btn_search.png") no-repeat center;
+	border: 0;
+ 
+    width: 20px;
+    height: 20px;
+    top: 50px;
+    right: 10px;
+    text-indent: -100px;
+    cursor: pointer;
+
+}
+
+li.panel_li{
+	font-size: 12px;
+	color:#3A3939;
+	margin-top: 10px;
+}
+
+
+.panel_Click_Ranking{
+	margin-top: 20px;
+	width: 300px;
+	border-style:solid;
+    border-color:#D5D5D5;
+}
+
+
+.panel_Comment_Ranking{
+	margin-top: 20px;
+	width: 300px;
+	border-style:solid;
+    border-color:#D5D5D5;
+}

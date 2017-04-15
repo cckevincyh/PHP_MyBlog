@@ -1,0 +1,31 @@
+
+.panel_myInfo{
+	margin-top: auto;
+	width: 300px;
+	border-style:solid;
+    border-color:#D5D5D5;
+}
+
+.panel_head{
+	
+	margin-top: auto;
+	background:#D5D5D5;
+	width: auto;
+	
+}
+
+li.panel_li{
+	text-align: right;
+	font-size: 14px;
+	color:#3A3939;
+	margin-top: 20px;
+}
+
+li._panel_li{
+	font-size: 14px;
+	color:#3A3939;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+

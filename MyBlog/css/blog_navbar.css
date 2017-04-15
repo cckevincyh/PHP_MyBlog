@@ -1,0 +1,51 @@
+body{
+	background:url("/MyBlog/img/macaco.png");
+	margin: 0px;
+		
+}
+
+
+/**导航栏*/
+.blog_navbar{
+	height: 68px;
+}
+.dropdown{
+	margin-top: auto;
+	margin-right: 100px;
+	width: auto;
+	height: 67px;
+}
+/**下拉菜单栏*/
+.dropdown-menu{
+	height: auto;
+	font-size: 17px;
+}
+
+.blog_brand{
+	font-size: 25px;
+	margin-top: 6px;
+}
+
+/*导航栏字体*/
+.a_navbar_text{
+	margin-top: 6px;
+	font-size: 20px;
+}
+
+/*导航栏点击后的效果*/
+._active{
+	margin-top: 0px;
+	width: auto;
+	height: 67px;
+	background: #0E0E0E;
+}
+
+
+
+
+.blog_top_title{
+	margin-top:auto;
+	background:#191414;
+	height: 107px;
+	border:1px solid gray;
+}

@@ -1,0 +1,19 @@
+
+li {
+	/*使得LI前面的点不在显示*/
+	list-style-type:none;
+}
+
+
+/* 已被访问的链接 */
+a:visited {
+	color:#636363;
+} 
+
+a:link {
+	/*取消链接下划线*/
+	text-decoration:none;
+	color:#434343;
+}
+
+

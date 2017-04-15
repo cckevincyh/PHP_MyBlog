@@ -22,7 +22,7 @@ define("CTRL_PATH", PLAT_PATH . "Controllers" . DS);//当前控制器所在目�
 define("MODEL_PATH", PLAT_PATH . "Models" . DS);//当前模型所在目录
 define("VIEW_PATH", PLAT_PATH . "Views" . DS);//当前视图所在目录
 
-$c = !empty($_GET['c']) ? $_GET['c'] : "User";//它也可能是"User",或其他。。		。
+$c = !empty($_GET['c']) ? $_GET['c'] : "Index";//它也可能是"Index","User",或其他。。		。
 	//我们这里，把“user”当做默认要使用的控制器
 
 function __autoload($class){
@@ -37,8 +37,8 @@ function __autoload($class){
         require  CTRL_PATH  .  $class  . ".class.php";
     }
 }
-
-
+$result = substr($_SERVER['PHP_SELF'],0,strlen($_SERVER['PHP_SELF'])-9);
+define("ROOT_PATH",$result);
 $controller_name = $c . "Controller";		//构建控制器的类名
 $controller = new  $controller_name ();	//可变类
 

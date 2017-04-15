@@ -1,0 +1,62 @@
+/*博客列表内容整体div*/
+.blog-div{
+	float: left;
+    background-color:#FFFFFF;
+	/*border-style:solid;*//*边框*/
+    width: 880px;
+    padding: 10px;
+	 border-radius: 25px;/*圆角处理*/
+	margin:0 auto;
+}
+/*博客图片边框圆弧框*/
+.blog-list-img {
+	margin-top: 5px;
+    border-radius: 25px;/*圆角处理*/
+    padding: 20px; 
+  	 width: 25%;
+    height: 170px; 
+	margin-right: 40px;
+	float: left;
+	
+}
+
+/*博客整体内容div*/
+.blog-content{
+	width: 60%;
+	height: 200px;
+	float: left;
+		
+}
+
+/*博客详情整体div*/
+.author-info{
+	margin-top: 20px;
+	float: right;
+}
+
+/*博客作者div*/
+.author{
+	margin-right: 20px;
+	display: inline;
+}
+
+/*博客发布时间div*/
+.date-time{
+	margin-right: 20px;
+	display: inline;
+}
+
+/*博客类型div*/
+.blog-type{
+	display: inline;
+	/*border-style:solid;*/	/*显示边框*/
+}
+
+
+p.blog-info{
+	color:#878787;
+	font-style:italic;/*文本斜体显示*/
+}
+
+/*解决div容器不包容浮动元素*/
+

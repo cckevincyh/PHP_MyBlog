@@ -9,9 +9,9 @@ class UserController extends BaseController {
 
 
     function showAction(){
-       $user =  ModelFactory::getModel("UserModel");
-        $result = $user->getUserById(1);
-        print_r( $result);
+       $user =  ModelFactory::getModel("MyInfoModel");
+        $result = $user->addBlogNum();
+        var_dump( $result);
 
     }
 }
