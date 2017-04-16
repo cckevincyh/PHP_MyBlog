@@ -19,10 +19,10 @@
 
 			<iframe class="setting_pwd" src="setting_pwd.php" frameborder="0" scrolling="no" name="content" id="content"></iframe>
 
-    <!--
-       <iframe class="setting_myinfo" src="setting_myinfo.php" frameborder="0" scrolling="no" name="setting_content"></iframe>
- -->
+
   </div>
+
+
 
 
 

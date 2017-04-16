@@ -16,14 +16,10 @@ class UserModel extends BaseModel{
     public function getUser(){
         $sql = "SELECT * FROM tb_user WHERE uid= 1";
         $stmt = $this->_dao->prepare($sql);
-        if(isset($uid)){
-            $stmt->bindValue(1,$uid);
-            $stmt->execute();
-            $result = $stmt->fetch(PDO::FETCH_ASSOC);
-            return $result;
-        }
+        $stmt->execute();
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $result;
 
-        return false;
     }
 
 

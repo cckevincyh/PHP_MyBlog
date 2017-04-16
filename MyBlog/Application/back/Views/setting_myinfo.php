@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/MyBlog/css/bootstrap.min.css">
+<link rel="stylesheet" href="/MyBlog/css/bootstrap.css">
 <link rel="stylesheet" href="/MyBlog/css/bootstrap-theme.min.css">
 <script src="/MyBlog/js/bootstrap.min.js"></script>
 <script src="/MyBlog/jQuery/jquery-3.1.1.min.js"></script>
@@ -21,7 +22,7 @@
                                <form class="form-horizontal">   <!--保证样式水平不混乱-->   
 							
 										<div class="form-group">	
-											<label for="firstname" class="col-sm-2 control-label">头像</label>
+											<label for="firstname" class="col-sm-1 control-label">头像</label>
 											<div class="col-sm-2">
 											 <label for="inputfile"></label>
 										     <!--为了jquery获得basePath的值，必须写（如果没有更好的办法） -->
@@ -37,7 +38,7 @@
 							
 				
 										<div class="form-group">	
-											<label for="firstname" class="col-sm-2 control-label">QQ</label>
+											<label for="firstname" class="col-sm-1 control-label">QQ</label>
 												<div class="col-sm-2">
 													<input type="hidden" id="updateId">
 													<input type="text" class="form-control" id="updateName" placeholder="请输入QQ号码">
@@ -47,7 +48,7 @@
 											
 										
 										<div class="form-group">	
-											<label for="firstname" class="col-sm-2 control-label">Email</label>
+											<label for="firstname" class="col-sm-1 control-label">Email</label>
 											<div class="col-sm-2">
 													<input type="text" class="form-control" id="updateName2" placeholder="请输入Email地址">
 													<label class="control-label" for="updateDesc" style="display: none;"></label>	
@@ -56,7 +57,7 @@
 										
 										
 										<div class="form-group">	
-											<label for="firstname" class="col-sm-2 control-label">微信二维码</label>
+											<label for="firstname" class="col-sm-1 control-label">微信二维码</label>
 											<div class="col-sm-2">
 											 <label for="inputfile"></label>
 										     <!--为了jquery获得basePath的值，必须写（如果没有更好的办法） -->
@@ -73,7 +74,7 @@
 															
 									
 											<div class="form-group">
-											<label for="firstname" class="col-sm-2 control-label"></label>
+											<label for="firstname" class="col-sm-1 control-label"></label>
 												<div class="col-sm-2">
 													<button type="button" class="btn btn-danger" id="updateProductInfo">
 														修改
