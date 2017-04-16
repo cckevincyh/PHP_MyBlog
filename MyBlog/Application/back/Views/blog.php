@@ -39,7 +39,7 @@
 							 <ul class="dropdown-menu">
 								<li><a href="#">账户设置</a></li>
 								 <li class="divider"></li>
-								<li><a href="/MyBlog/index.php?c=Login&a=logout">登出</a></li>
+								<li><a href="/MyBlog/index.php?p=back&c=Login&a=logout">登出</a></li>
 								</ul>
 				</li>
   		 </ul>
