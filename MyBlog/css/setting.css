@@ -1,0 +1,92 @@
+/*全部设置为无边距*/
+*{
+	
+	margin:0;padding:0;
+}
+
+
+.blog_top{
+	
+	width: 1516px;
+	height: 312px;
+	border:0px solid gray;
+}
+
+
+.setting_content{
+	
+	width: 100%;
+	height: 950px;
+	border:0px solid gray;
+}
+
+
+
+
+.content {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    margin-top: 30px;
+    padding: 0 31px;
+
+	
+}
+
+
+
+.content .logo {
+    background: url(/MyBlog/img/setting.png) no-repeat;
+	margin-top: 10px;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 58px;
+    margin-bottom: 27px;
+    font-size: 20px;
+}
+
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+}
+
+
+
+.content .tabs .on {
+    background: #be1a21;
+    color: #fff;
+}
+
+.content .tabs {
+	padding-bottom: 38px;
+    border-bottom: 1px solid #be1a21;
+    margin-bottom: 21px;
+}
+
+.content .tabs a {
+    background: #f3f3f3;
+    float: left;
+    padding: 7px 23px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.content .tabs a {
+    background: #f3f3f3;
+    float: left;
+    padding: 7px 23px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+
+
+.setting_pwd{
+	margin-top: 20px;
+	height: 300px;
+}
+
+.setting_myinfo{
+	margin-top: 20px;
+	height: 700px;
+}

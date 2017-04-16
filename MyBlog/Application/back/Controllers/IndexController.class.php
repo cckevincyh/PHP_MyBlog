@@ -12,4 +12,19 @@ class IndexController{
 
          require VIEW_PATH."index.php";
     }
+
+
+    public function settingAction(){
+        require VIEW_PATH."setting.php";
+    }
+
+
+    public function changePwdAction(){
+        require VIEW_PATH."setting_pwd.php";
+    }
+
+
+    public function changeMyInfoAction(){
+        require VIEW_PATH."setting_myInfo.php";
+    }
 }

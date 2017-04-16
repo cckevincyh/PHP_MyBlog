@@ -37,9 +37,9 @@
 						<a data-hover="dropdown" href="#" role="button"> <img src="#" class="img-circle" width="35" height="35"></a>
 
 							 <ul class="dropdown-menu">
-								<li><a href="#">账户设置</a></li>
+								<li><a href="/MyBlog/index.php?p=back&a=setting" target="_parent">账户设置</a></li>
 								 <li class="divider"></li>
-								<li><a href="/MyBlog/index.php?p=back&c=Login&a=logout">登出</a></li>
+								<li><a href="/MyBlog/index.php?p=back&c=Login&a=logout" target="_parent">登出</a></li>
 								</ul>
 				</li>
   		 </ul>
