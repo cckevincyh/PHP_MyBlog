@@ -6,7 +6,7 @@ $(function () {
 
         $.ajax({
             type: 'POST',
-            url: 'index.php?c=Login&a=login',
+            url: 'index.php?p=back&c=Login&a=login',
             cache: false,
             data: {
                 username: $.trim($("#username").val()),
@@ -14,7 +14,7 @@ $(function () {
             },
             success: function (data) {
                 if (data == 1) {
-                    window.location.href = "index.php";
+                    window.location.href = "index.php?p=back";
 
                 } else if (data == 0) {
                     showInfo("登录失败，请重试");

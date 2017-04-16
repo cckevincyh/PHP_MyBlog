@@ -50,8 +50,16 @@
 .blog-type{
 	display: inline;
 	/*border-style:solid;*/	/*显示边框*/
+	margin-right: 20px;
+}
+.blog-edit{
+	display: inline;
+	margin-right: 20px;
 }
 
+.blog-delete{
+	display: inline;
+}
 
 p.blog-info{
 	color:#878787;
