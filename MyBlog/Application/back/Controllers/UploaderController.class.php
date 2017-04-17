@@ -8,16 +8,23 @@
 
 class UploaderController extends BaseController {
 
+
+    //上传头像方法
     public function uploaderHeardAction(){
         $fileName = "heardImgUpload";
         $this->uploader($fileName);
 
     }
 
+    //上传微信二维码方法
+    public function uploaderWeChatAction(){
+        $fileName = "wechatImgUpload";
+        $this->uploader($fileName);
+
+    }
 
 
 
-   //上传头像方法
 
     public function uploader($fileName) {
         $files = array();

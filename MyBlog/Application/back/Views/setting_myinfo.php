@@ -14,6 +14,7 @@
 <script src="/MyBlog/js/bootstrap.min.js"></script>
 <script src="/MyBlog/jQuery/ajaxfileupload.js"></script>
 <script src="/MyBlog/js/ajaxHeardImgUpload.js"></script>
+    <script src="/MyBlog/js/ajaxWeChatImgUpload.js"></script>
 </head>
 
 
