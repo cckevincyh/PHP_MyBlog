@@ -33,7 +33,7 @@ class UserModel extends BaseModel{
     public function updatePwd($pwd){
         $sql = "UPDATE tb_user SET pwd = ? WHERE uid = 1";
         $stmt = $this->_dao->prepare($sql);
-        if(isset($pwd)){
+        if(!empty($pwd)){
             $stmt->bindValue(1,$pwd);
             $result = $stmt->execute();
             return $result;

@@ -16,7 +16,7 @@ class ArticleModel extends BaseModel {
     public function getArticleById($aid){
         $sql = "SELECT * FROM tb_article WHERE aid= ?";
         $stmt = $this->_dao->prepare($sql);
-        if(isset($aid)){
+        if(!empty($aid)){
             $stmt->bindValue(1,$aid);
             $stmt->execute();
             $result = $stmt->fetch(PDO::FETCH_ASSOC);

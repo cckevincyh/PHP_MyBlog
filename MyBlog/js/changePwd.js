@@ -15,23 +15,7 @@ $(function () {
                 confirmPwd: $.trim($("#confirmPwd").val()),
             },
             success: function (data) {
-
-                if (data == 1) {
-                    showInfo("修改成功");
-                } else if (data == -1) {
-                    showInfo("原密码错误");
-                } else if (data == -2) {
-                    showInfo("原密码不能为空");
-                } else if (data == -3) {
-                    showInfo("新密码不能为空");
-                } else if (data == -4) {
-                    showInfo("确认密码不能为空");
-                } else if (data == -5) {
-                    showInfo("确认密码不一致");
-                }  else {
-                    showInfo("修改失败，请重试");
-                }
-
+                showInfo(data);
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 showInfo("修改失败，请重试");

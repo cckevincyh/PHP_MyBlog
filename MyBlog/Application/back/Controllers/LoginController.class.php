@@ -13,7 +13,7 @@ class LoginController extends BaseController{
     public function loginAction() {
         $username = $_POST['username'];
         $pwd = $_POST['password'];
-        if (isset($username) && isset($pwd)) {
+        if (!empty($username) && !empty($pwd)) {
             $userModel = ModelFactory::getModel("UserModel");
             //得到当前用户
             $user = $userModel->getUser();

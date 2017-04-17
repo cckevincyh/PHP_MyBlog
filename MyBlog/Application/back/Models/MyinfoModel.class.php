@@ -19,7 +19,7 @@ class MyInfoModel extends BaseModel{
     public function updateMyInfo($qq,$email,$weChat){
         $sql = "UPDATE tb_myinfo SET qq=? AND email=? AND wechat=? WHERE mid = 1";
         $stmt = $this->_dao->prepare($sql);
-        if(isset($qq) && isset($email) && isset($weChat)){
+        if(!empty($qq) && !empty($email) && !empty($weChat)){
             $stmt->bindValue(1,$qq);
             $stmt->bindValue(2,$email);
             $stmt->bindValue(3,$weChat);

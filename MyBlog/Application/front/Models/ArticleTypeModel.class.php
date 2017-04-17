@@ -17,7 +17,7 @@
      public function getArticleTypeById($tid){
          $sql = "SELECT * FROM tb_type WHERE aid= ?";
          $stmt = $this->_dao->prepare($sql);
-         if(isset($tid)){
+         if(!empty($tid)){
              $stmt->bindValue(1,$tid);
              $stmt->execute();
              $result = $stmt->fetch(PDO::FETCH_ASSOC);
