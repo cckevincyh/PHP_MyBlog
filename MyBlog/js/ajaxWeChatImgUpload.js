@@ -7,7 +7,7 @@ $(document).ready(function(){
 });
 
 
-//上传头像图片的方法，
+//上传微信二维码图片的方法，
 function ajaxWeChatImgUpload(){
     //调用ajaxfileupload.js中的方法
     $.ajaxFileUpload({

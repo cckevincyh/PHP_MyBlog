@@ -10,8 +10,8 @@ class UploaderController extends BaseController {
 
 
     //上传头像方法
-    public function uploaderHeardAction(){
-        $fileName = "heardImgUpload";
+    public function uploaderHeadAction(){
+        $fileName = "headImgUpload";
         $this->uploader($fileName);
 
     }

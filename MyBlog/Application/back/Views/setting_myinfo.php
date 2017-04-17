@@ -10,11 +10,12 @@
 <link rel="stylesheet" href="/MyBlog/css/bootstrap-theme.min.css">
 <script src="/MyBlog/js/bootstrap.min.js"></script>
 <script src="/MyBlog/jQuery/jquery-3.1.1.min.js"></script>
+<script src="/MyBlog/js/myInfo.js"></script>
 <script src="/MyBlog/js/bootstrap-dropdown.min.js"></script>
 <script src="/MyBlog/js/bootstrap.min.js"></script>
 <script src="/MyBlog/jQuery/ajaxfileupload.js"></script>
-<script src="/MyBlog/js/ajaxHeardImgUpload.js"></script>
-    <script src="/MyBlog/js/ajaxWeChatImgUpload.js"></script>
+<script src="/MyBlog/js/ajaxHeadImgUpload.js"></script>
+<script src="/MyBlog/js/ajaxWeChatImgUpload.js"></script>
 </head>
 
 
@@ -25,12 +26,11 @@
         <div class="form-group">
             <label for="firstname" class="col-sm-1 control-label">头像</label>
             <div class="col-sm-2">
-             <label for="inputfile"></label>
 
-            <input type="hidden" id="heardImg"/>
+            <input type="hidden" id="headImg"/>
 
-            <input type="file" id="heardImgUpload" name="heardImgUpload"/><br/>
-            <label class="control-label" for="heardImgUpload" style="display: none;"></label>
+            <input type="file" id="headImgUpload" name="headImgUpload"/><br/>
+            <label class="control-label" for="headImgUpload" style="display: none;"></label>
             <p class="help-block"><img class="img-rounded" src="#" width="100" height="100" id="img1" alt="请上传头像"  /></p>
             </div>
         </div>
@@ -40,9 +40,8 @@
         <div class="form-group">
             <label for="firstname" class="col-sm-1 control-label">QQ</label>
                 <div class="col-sm-2">
-                    <input type="hidden" id="updateId">
-                    <input type="text" class="form-control" id="updateName" placeholder="请输入QQ号码">
-                <label class="control-label" for="updateName" style="display: none;"></label>
+                    <input type="text" class="form-control" id="qq" placeholder="请输入QQ号码">
+                <label class="control-label" for="qq" style="display: none;"></label>
                 </div>
         </div>
 
@@ -50,7 +49,7 @@
         <div class="form-group">
             <label for="firstname" class="col-sm-1 control-label">Email</label>
             <div class="col-sm-2">
-                    <input type="text" class="form-control" id="updateName2" placeholder="请输入Email地址">
+                    <input type="text" class="form-control" id="email" placeholder="请输入Email地址">
                     <label class="control-label" for="updateDesc" style="display: none;"></label>
             </div>
         </div>
@@ -59,7 +58,6 @@
         <div class="form-group">
             <label for="firstname" class="col-sm-1 control-label">微信二维码</label>
             <div class="col-sm-2">
-             <label for="inputfile"></label>
 
             <input type="hidden" id="wechatImg"/>
             <input type="file" id="wechatImgUpload" name="wechatImgUpload"/><br/>
@@ -74,8 +72,8 @@
             <div class="form-group">
             <label for="firstname" class="col-sm-1 control-label"></label>
                 <div class="col-sm-2">
-                    <button type="button" class="btn btn-danger" id="updateProductInfo">
-                        修改
+                    <button type="button" class="btn btn-danger" id="btn_myInfo">
+                        提交
                     </button>
                 </div>
             </div>
