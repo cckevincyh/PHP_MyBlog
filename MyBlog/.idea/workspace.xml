@@ -60,8 +60,8 @@
       <file leaf-file-name="ArticleTypeController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/back/Controllers/ArticleTypeController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+            <state relative-caret-position="312">
+              <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -170,9 +170,9 @@
         <option value="$PROJECT_DIR$/Application/back/Views/blog.php" />
         <option value="$PROJECT_DIR$/Application/back/Views/setting_content.php" />
         <option value="$PROJECT_DIR$/Application/back/Views/blog_detail_content.php" />
-        <option value="$PROJECT_DIR$/Application/back/Controllers/ArticleTypeController.class.php" />
         <option value="$PROJECT_DIR$/Application/back/Views/blog_type.php" />
         <option value="$PROJECT_DIR$/js/add_blog_type.js" />
+        <option value="$PROJECT_DIR$/Application/back/Controllers/ArticleTypeController.class.php" />
       </list>
     </option>
   </component>
@@ -481,12 +481,12 @@
       <workItem from="1492346175906" duration="1202000" />
       <workItem from="1492390204640" duration="33915000" />
       <workItem from="1492482991416" duration="2406000" />
-      <workItem from="1492487296941" duration="19560000" />
+      <workItem from="1492487296941" duration="19844000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116986000" />
+    <option name="totallyTimeSpent" value="117270000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
@@ -967,8 +967,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/back/Controllers/ArticleTypeController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        <state relative-caret-position="312">
+          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
           <folding />
         </state>
       </provider>

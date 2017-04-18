@@ -14,7 +14,7 @@ class ArticleTypeController extends BaseController {
 
 
     /**
-     * 添加新的博客分类
+     *  添加新的博客分类
      */
     public function addTypeAction(){
 
