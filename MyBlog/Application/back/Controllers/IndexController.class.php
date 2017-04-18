@@ -24,7 +24,12 @@ class IndexController{
     }
 
 
-    public function changeMyInfoAction(){
-        require VIEW_PATH."setting_myInfo.php";
+    public function blog_detailAction(){
+        require VIEW_PATH."blog_detail.php";
     }
+
+    public function blog_detail_contentAction(){
+        require VIEW_PATH."blog_detail_content.php";
+    }
+
 }

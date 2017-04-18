@@ -14,13 +14,13 @@
         ?>
         <div class="blog-div">
             <div class="blog-img-box fl">
-                <a href="#" target="_blank">
-                    <img class="blog-list-img" src="#" width="215" height="144" alt="个人博客">
+                <a href="/Myblog/index.php?p=back&a=blog_detail" target="_blank">
+                    <img class="blog-list-img" src="/Myblog/index.php?p=back&a=blog_detail" width="215" height="144" alt="个人博客">
                 </a>
             </div>
             <div class="blog-content">
                 <h3 class="title-h3">
-                    <a href="#" target="_blank">
+                    <a href="/Myblog/index.php?p=back&a=blog_detail" target="_blank">
                         个人博客
                     </a>
                 </h3>

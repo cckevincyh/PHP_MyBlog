@@ -23,20 +23,22 @@ class MyInfoModel extends BaseModel{
 
     /**
      * 添加个人资料
+     * @param $name
      * @param $qq
      * @param $email
-     * @param $heard_img
+     * @param $head_img
      * @param $weChat
      * @return bool
      */
-    public function  addMyInfo($qq,$email,$head_img,$weChat){
-        $sql = "INSERT INTO tb_myinfo  (mid, qq, email, head_img, wechat) VALUES (1,?,?,?,?)";
+    public function  addMyInfo($name,$qq,$email,$head_img,$weChat){
+        $sql = "INSERT INTO tb_myinfo  (mid, qq, email, head_img, wechat,mname) VALUES (1,?,?,?,?,?)";
         $stmt = $this->_dao->prepare($sql);
         if(!empty($qq) && !empty($email) && !empty($weChat) && !empty($head_img)){
             $stmt->bindValue(1,$qq);
             $stmt->bindValue(2,$email);
             $stmt->bindValue(3,$head_img);
             $stmt->bindValue(4,$weChat);
+            $stmt->bindValue(5,$name);
             $result = $stmt->execute();
             return $result;
         }
@@ -46,19 +48,22 @@ class MyInfoModel extends BaseModel{
 
     /**
      * 修改个人资料
+     * @param $name
      * @param $qq
      * @param $email
+     * @param $head_img
      * @param $weChat
      * @return bool
      */
-    public function updateMyInfo($qq,$email,$head_img,$weChat){
-        $sql = "UPDATE tb_myinfo SET qq=? , email=? , head_img=?  , wechat=?  WHERE mid = 1";
+    public function updateMyInfo($name,$qq,$email,$head_img,$weChat){
+        $sql = "UPDATE tb_myinfo SET qq=? , email=? , head_img=?  , wechat=?  ,mname=? WHERE mid = 1";
         $stmt = $this->_dao->prepare($sql);
         if(!empty($qq) && !empty($email) && !empty($weChat) && !empty($head_img)){
             $stmt->bindValue(1,$qq);
             $stmt->bindValue(2,$email);
             $stmt->bindValue(3,$head_img);
             $stmt->bindValue(4,$weChat);
+            $stmt->bindValue(5,$name);
             $result = $stmt->execute();
             return $result;
         }

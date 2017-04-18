@@ -24,14 +24,23 @@
 <form class="form-horizontal">   <!--保证样式水平不混乱-->
 
         <div class="form-group">
+            <label for="firstname" class="col-sm-1 control-label">姓名</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="name" name="name" placeholder="请输入姓名" value="<?php echo $name?>">
+                <label class="control-label" for="name" style="display: none;"></label>
+            </div>
+        </div>
+
+
+        <div class="form-group">
             <label for="firstname" class="col-sm-1 control-label">头像</label>
             <div class="col-sm-2">
 
             <input type="hidden" id="headImg"/>
 
-            <input type="file" id="headImgUpload" name="headImgUpload"/><br/>
+            <input type="file" id="headImgUpload" name="headImgUpload"  class="control-label"/><br/>
             <label class="control-label" for="headImgUpload" style="display: none;"></label>
-            <p class="help-block"><img class="img-rounded" src="#" width="100" height="100" id="img1" alt="请上传头像"  /></p>
+            <p class="help-block"><img class="img-rounded" src="<?php echo $head_img?>" width="100" height="100" id="img1" alt="请上传头像"  /></p>
             </div>
         </div>
 
@@ -40,7 +49,7 @@
         <div class="form-group">
             <label for="firstname" class="col-sm-1 control-label">QQ</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control" id="qq" placeholder="请输入QQ号码">
+                    <input type="text" class="form-control" id="qq" name="qq" placeholder="请输入QQ号码" value="<?php echo $qq?>">
                 <label class="control-label" for="qq" style="display: none;"></label>
                 </div>
         </div>
@@ -49,7 +58,7 @@
         <div class="form-group">
             <label for="firstname" class="col-sm-1 control-label">Email</label>
             <div class="col-sm-2">
-                    <input type="text" class="form-control" id="email" placeholder="请输入Email地址">
+                    <input type="text" class="form-control" id="email" placeholder="请输入Email地址" value="<?php echo $email?>">
                     <label class="control-label" for="updateDesc" style="display: none;"></label>
             </div>
         </div>
@@ -60,9 +69,9 @@
             <div class="col-sm-2">
 
             <input type="hidden" id="wechatImg"/>
-            <input type="file" id="wechatImgUpload" name="wechatImgUpload"/><br/>
-            <label class="control-label" for="wechatImgUpload" style="display: none;"></label>
-            <p class="help-block"><img class="img-rounded" src="#" width="100" height="100" id="img2" alt="请上传微信二维码"  /></p>
+            <input type="file" id="wechatImgUpload" name="wechatImgUpload"  class="control-label"/><br/>
+            <label class="control-label" for="wechatImgUpload" style="display: none;" ></label>
+            <p class="help-block"><img class="img-rounded" src="<?php echo $wechat?>" width="100" height="100" id="img2" alt="请上传微信二维码"  /></p>
             </div>
         </div>
 

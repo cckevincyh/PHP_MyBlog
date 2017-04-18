@@ -15,6 +15,7 @@ $(function () {
             url: '/MyBlog/index.php?p=back&c=MyInfo&a=myInfo',
             cache: false,
             data: {
+                name: $.trim($("#name").val()),
                 qq: $.trim($("#qq").val()),
                 email: $.trim($("#email").val()),
                 headImg: $.trim($("#headImg").val()),
@@ -74,6 +75,18 @@ function validMyInfo() {
         $('#email').parent().removeClass("has-error");
         $('#email').next().text("");
         $("#email").next().hide();
+    }
+
+    var name = $.trim($("#name").val());
+    if (name == "") {
+        $('#name').parent().addClass("has-error");
+        $('#name').next().text("请输入姓名");
+        $("#name").next().show();
+        flag = false;
+    } else {
+        $('#name').parent().removeClass("has-error");
+        $('#name').next().text("");
+        $("#name").next().hide();
     }
 
 

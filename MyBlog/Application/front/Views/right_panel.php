@@ -25,6 +25,14 @@
 				 
 				 <img src="<?php echo $result['head_img']?>"  class="img-thumbnail" width="200" height="200"/>
 				 <table>
+                     <tr>
+                         <td>
+                             <li class="panel_li">姓名:</li>
+                         </td>
+                         <td>
+                             <li class="_panel_li"><?php echo $result['mname']?></li>
+                         </td>
+                     </tr>
 				 <tr>
 				 		<td>
 							 <li class="panel_li">访问量:</li>

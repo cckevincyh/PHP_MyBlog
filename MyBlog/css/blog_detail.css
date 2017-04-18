@@ -1,0 +1,80 @@
+/*全部设置为无边距*/
+*{
+
+    margin:0;padding:0;
+}
+
+
+.blog_top{
+
+    width: 1516px;
+    height: 312px;
+    border:0px solid gray;
+}
+
+
+.blog_detail_content{
+
+    width: 100%;
+    height: 950px;
+    border:0px solid gray;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+.link_postdate{
+	background-image:url(/Myblog/img/postdate_img.png);
+    background-repeat: no-repeat;
+    padding-left: 20px;
+	margin-right: 20px;
+}
+
+.link_view{
+	background-image:url(/Myblog/img/view_img.png);
+    background-repeat: no-repeat;
+    padding-left: 20px;
+	margin-right: 20px;
+}
+
+
+.link_comments{
+	background-image:url(/Myblog/img/comments_img.png);
+    background-repeat: no-repeat;
+    padding-left: 20px;
+	margin-right: 20px;
+}
+
+.link_like{
+	background-image:url(/Myblog/img/like_img.png);
+    background-repeat: no-repeat;
+    padding-left: 20px;
+	margin-right: 20px;
+}
+
+
+.blog-info{
+	text-align: right;
+}
+
+
+.category_div{
+	margin-left: 20px;
+}
+
+.article_content{
+	/*border-style:solid;*/
+	height: 100%;
+}
+
+textarea
+{
+width:100%;
+    height: 100%;
+}
