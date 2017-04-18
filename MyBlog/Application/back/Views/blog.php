@@ -37,7 +37,7 @@
 						<a data-hover="dropdown" href="#" role="button"> <img src="#" class="img-circle" width="35" height="35"></a>
 
 							 <ul class="dropdown-menu">
-								<li><a href="/MyBlog/index.php?p=back&a=setting" target="_parent">账户设置</a></li>
+								<li><a href="/MyBlog/index.php?p=back&a=setting" target="_parent">设置</a></li>
                                  <li class="divider"></li>
                                  <li><a href="/MyBlog/index.php?p=back&&a=add_blog" target="_parent">写博客</a></li>
 								 <li class="divider"></li>

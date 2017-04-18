@@ -42,7 +42,7 @@
         
         <div class="article_content">
         	
-        	<textarea id="blog_detail_content" role="111" cols="111"></textarea>
+        	<textarea id="blog_detail_content" ></textarea>
         </div>
         
       
