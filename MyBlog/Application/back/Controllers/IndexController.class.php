@@ -32,4 +32,8 @@ class IndexController{
         require VIEW_PATH."blog_detail_content.php";
     }
 
+    public function add_blogAction(){
+        require VIEW_PATH."add_blog_detail.php";
+    }
+
 }

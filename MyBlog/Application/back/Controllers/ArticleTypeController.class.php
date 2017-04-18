@@ -7,4 +7,8 @@
  */
 class ArticleTypeController extends BaseController {
 
+
+    public function indexAction(){
+        require VIEW_PATH."blog_type.php";
+    }
 }

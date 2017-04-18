@@ -1,0 +1,23 @@
+
+.article_content{
+	/*border-style:solid;*/
+	height: 1000px;
+}
+
+
+.add_blog{
+	margin-top: 20px;
+}
+
+.post_blog{
+	float: right;
+	margin-right: 20px;
+	
+}
+
+
+textarea
+{
+width:100%;
+height:100%;
+}

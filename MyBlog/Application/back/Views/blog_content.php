@@ -3,6 +3,15 @@
 <head>
 <meta charset="utf-8">
 <title>123</title>
+<link rel="stylesheet" href="/MyBlog/css/bootstrap.min.css">
+<link rel="stylesheet" href="/MyBlog/css/bootstrap.css"><!-- 去掉模糊框的暗色背景-->
+<link rel="stylesheet" href="/MyBlog/css/bootstrap-theme.min.css">
+<script src="/MyBlog/js/bootstrap.min.js"></script>
+<script src="/MyBlog/jQuery/jquery-3.1.1.min.js"></script>
+<script src="/MyBlog/js/bootstrap-dropdown.min.js"></script>
+
+<script src="/MyBlog/js/jquery.min.js"></script>
+<script src="/MyBlog/js/bootstrap.min.js"></script>
 <link href="/MyBlog/css/blog_content.css" rel="stylesheet">
 <link href="/MyBlog/css/common.css" rel="stylesheet">
 </head>
@@ -60,7 +69,22 @@
 <?php
     }
 ?>
+<div class="pull-right"><!--右对齐--->
+    <ul class="pagination">
+        <li class="disabled"><a href="#">第1页/共2页</a></li>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">&laquo;</a></li><!-- 上一页 -->
 
+        <li class="active"><a>${i }</a><li>
+
+
+
+
+        <li><a href="${pageContext.request.contextPath}/admin/articleManageAction_${pb.url }pageCode=${pb.pageCode+1}">&raquo;</a></li>
+
+        <li><a href="${pageContext.request.contextPath}/admin/articleManageAction_${pb.url }pageCode=${pb.totaPage}">尾页</a></li>
+    </ul>
+</div>
 
 
 <body>
