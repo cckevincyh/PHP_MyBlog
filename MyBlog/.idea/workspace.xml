@@ -61,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/Application/back/Controllers/ArticleTypeController.class.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="312">
-              <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+              <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -481,12 +481,12 @@
       <workItem from="1492346175906" duration="1202000" />
       <workItem from="1492390204640" duration="33915000" />
       <workItem from="1492482991416" duration="2406000" />
-      <workItem from="1492487296941" duration="19844000" />
+      <workItem from="1492487296941" duration="20078000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117270000" />
+    <option name="totallyTimeSpent" value="117504000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
@@ -968,7 +968,7 @@
     <entry file="file://$PROJECT_DIR$/Application/back/Controllers/ArticleTypeController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
-          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
           <folding />
         </state>
       </provider>
