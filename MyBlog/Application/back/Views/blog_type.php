@@ -42,15 +42,13 @@
                                 <th>操作</th>
                             </tr>
                             </thead>
-                            
-                            
                             <?php
                                 if(count($result)>0){
-                                   foreach ($result as $value){
+                                   for($i = 0; $i<count($result)-1;$i++){
 
                             ?>
                              <tbody>
-	                         	   <td><?php echo $value['tname']?></td>
+	                         	   <td><?php echo $result[$i]['tname']?></td>
 
 	                                <td>
 	                                	<button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#updateModal">修改</button>
@@ -77,7 +75,7 @@
 
                         <div class="pull-right"><!--右对齐--->
                             <ul class="pagination _pagination">
-                                <li class="disabled"><a href="#">第1页/共2页</a></li>
+                                <li class="disabled"><a href="#">第<?php echo $result['pageBean']['pageCode']?>页/共<?php echo $result['pageBean']['totaPage']?>页</a></li>
                                 <li><a href="#">首页</a></li>
                                 <li><a href="#">&laquo;</a></li><!-- 上一页 -->
 

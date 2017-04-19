@@ -9,12 +9,47 @@
  class  ArticleTypeModel extends BaseModel{
 
 
-     public function getArticles(){
+     /**
+      * 获取全部博客分类
+      * @return array
+      */
+     public function getArticlTypes(){
          $sql = "SELECT * FROM tb_type";
          $stmt = $this->_dao->query($sql);
          $arr = array();
          while (  $result = $stmt->fetch(PDO::FETCH_ASSOC) ){
              $arr[] = $result;
+         }
+         return $arr;
+     }
+
+
+     /**
+      * 分页获取博客分类
+      * @param $pageCode 页码
+      * @param $pageSize 每页记录数
+      * @return array
+      */
+     public function getLimitArticleTypes($pageCode,$pageSize){
+         $sql = "SELECT * FROM tb_type limit $pageCode,$pageSize";
+         $stmt = $this->_dao->prepare($sql);
+         $arr = array();
+         if(!empty($pageCode) && !empty($pageSize)){
+             $stmt->execute();
+             while (  $result = $stmt->fetch(PDO::FETCH_ASSOC) ){
+                 $arr[] = $result;
+             }
+             $pageBean = array();   //装载分页信息
+             //获取总记录数
+             $sql = "SELECT count(*) FROM tb_type";
+             $stmt = $this->_dao->prepare($sql);
+             $stmt->execute();
+             $pageBean['totalRecord'] = $stmt->fetchColumn();//得到总记录数
+             $tp =  (int)($pageBean['totalRecord'] / $pageSize);
+             $pageBean['totaPage'] = $pageBean['totalRecord']  % $pageSize == 0 ? $tp : $tp + 1;  //得到总页数
+             $pageBean['pageCode'] = $pageCode; //当前页码
+             $pageBean['pageSize'] = $pageSize; //每页记录数
+             $arr['pageBean'] = $pageBean;
          }
          return $arr;
      }
@@ -28,7 +63,7 @@
      public function getArticleTypeById($tid){
          $sql = "SELECT * FROM tb_type WHERE aid= ?";
          $stmt = $this->_dao->prepare($sql);
-         if(empty($tid)){
+         if(!empty($tid)){
              $stmt->bindValue(1,$tid);
              $stmt->execute();
              $result = $stmt->fetch(PDO::FETCH_ASSOC);

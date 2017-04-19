@@ -13,7 +13,7 @@ class ArticleTypeController extends BaseController {
      */
     public function indexAction(){
         $articleTypeModel = ModelFactory::getModel("ArticleTypeModel");
-        $result = $articleTypeModel->getArticles();
+        $result = $articleTypeModel->getLimitArticleTypes(1,9);
         require VIEW_PATH."blog_type.php";
     }
 
