@@ -63,7 +63,7 @@
       * @return bool|mixed
       */
      public function getArticleTypeById($tid){
-         $sql = "SELECT * FROM tb_type WHERE aid= ?";
+         $sql = "SELECT * FROM tb_type WHERE tid= ?";
          $stmt = $this->_dao->prepare($sql);
          if(!empty($tid)){
              $stmt->bindValue(1,$tid);
@@ -98,11 +98,11 @@
       * @return bool
       */
      public function updateArticleType($tid,$typeName){
-         $sql = "UPDATE  tb_type SET tname = ? WHERE tname=?";
+         $sql = "UPDATE  tb_type SET tname = ? WHERE tid=?";
          $stmt = $this->_dao->prepare($sql);
          if(!empty($tid) && !empty($typeName)){
-             $stmt->bindValue(1,$tid);
-             $stmt->bindValue(2,$typeName);
+             $stmt->bindValue(1,$typeName);
+             $stmt->bindValue(2,$tid);
              $result = $stmt->execute();
              return $result;
          }

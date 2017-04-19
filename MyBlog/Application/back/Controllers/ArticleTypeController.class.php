@@ -24,6 +24,17 @@ class ArticleTypeController extends BaseController {
     }
 
 
+    /**
+     * 根据id获取博客类型
+     */
+    public function getTypeByIdAction(){
+        $id = @$_GET['tid'];
+        if (!empty($id)) {
+            $articleTypeModel = ModelFactory::getModel("ArticleTypeModel");
+            $result = $articleTypeModel->getArticleTypeById($id);
+            echo json_encode($result);
+        }
+    }
 
 
 
@@ -44,6 +55,24 @@ class ArticleTypeController extends BaseController {
             }
         }else{
             echo "添加失败";
+        }
+    }
+
+
+    public function updateTypeAction(){
+        $blogType = $_POST['blogType'];
+        $blogId = $_POST['blogId'];
+        if(!empty($blogType) && !empty($blogId)){
+            //添加新博客分类
+            $articleTypeModel = ModelFactory::getModel("ArticleTypeModel");
+            $b = $articleTypeModel->updateArticleType($blogId,$blogType);
+            if($b){
+                echo "修改成功";
+            }else{
+                echo "修改失败";
+            }
+        }else{
+            echo "修改失败";
         }
     }
 }
