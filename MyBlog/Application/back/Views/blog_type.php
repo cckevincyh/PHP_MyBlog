@@ -44,24 +44,34 @@
                             </thead>
                             
                             
-                            <!---在此插入信息-->
+                            <?php
+                                if(count($result)>0){
+                                   foreach ($result as $value){
 
+                            ?>
                              <tbody>
-	                         	   <td><s:property value="#readerType.readerTypeName"/></td>
-	                             
+	                         	   <td><?php echo $value['tname']?></td>
+
 	                                <td>
 	                                	<button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#updateModal">修改</button>
 	                                	
-	                                		<button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#updateModal">删除</button>
+	                                		<button type="button" class="btn btn-danger btn-xs">删除</button>
 	                               	</td>                                              
                           	  </tbody>
+                            <?php
+                                   }
+                                }else{
 
-                            	<tbody>
-	                         	   	<td>暂无数据</td>
-	                         	   	<td>暂无数据</td>
-	                                                                        
-                          	  </tbody>
+                                    ?>
+                                        <tbody>
+                                            <td>暂无数据</td>
+                                            <td>暂无数据</td>
 
+                                      </tbody>
+                                    <?php
+
+                            }
+                            ?>
                             
                         </table>
 
@@ -133,6 +143,53 @@
 
 </form>
 <!--------------------------------------添加的模糊框------------------------>
+
+
+
+
+
+<!--------------------------------------修改的模糊框------------------------>
+<form class="form-horizontal">   <!--保证样式水平不混乱-->
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        修改分类
+                    </h4>
+                </div>
+                <div class="modal-body">
+
+                    <!---------------------表单-------------------->
+                    <div class="form-group">
+                        <label for="firstname" class="col-sm-2 control-label">分类名称</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="addTypeName"  placeholder="请输入分类名称">
+                            <label class="control-label" for="addTypeName" style="display: none;"></label>
+                        </div>
+                    </div>
+
+
+
+                    <!---------------------表单-------------------->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                    <button type="button" class="btn btn-primary" id="addBlogType">
+                        添加
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+
+</form>
+<!--------------------------------------修改的模糊框------------------------>
 
 
 <div class="modal fade" id="modal_info" tabindex="-1" role="dialog" aria-labelledby="addModalLabel">

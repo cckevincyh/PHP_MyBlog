@@ -8,7 +8,12 @@
 class ArticleTypeController extends BaseController {
 
 
+    /**
+     * 获取文章分类数据，显示到博客分类设置
+     */
     public function indexAction(){
+        $articleTypeModel = ModelFactory::getModel("ArticleTypeModel");
+        $result = $articleTypeModel->getArticles();
         require VIEW_PATH."blog_type.php";
     }
 

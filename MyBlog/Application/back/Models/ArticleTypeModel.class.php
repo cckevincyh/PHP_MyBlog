@@ -9,6 +9,17 @@
  class  ArticleTypeModel extends BaseModel{
 
 
+     public function getArticles(){
+         $sql = "SELECT * FROM tb_type";
+         $stmt = $this->_dao->query($sql);
+         $arr = array();
+         while (  $result = $stmt->fetch(PDO::FETCH_ASSOC) ){
+             $arr[] = $result;
+         }
+         return $arr;
+     }
+
+
      /**
       * 根据ID得到指定的文章分类
       * @param $tid
