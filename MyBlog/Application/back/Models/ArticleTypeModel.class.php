@@ -31,7 +31,8 @@
       * @return array
       */
      public function getLimitArticleTypes($pageCode,$pageSize){
-         $sql = "SELECT * FROM tb_type limit $pageCode,$pageSize";
+         $page = ($pageCode - 1) * $pageSize;
+         $sql = "SELECT * FROM tb_type limit $page,$pageSize";
          $stmt = $this->_dao->prepare($sql);
          $arr = array();
          if(!empty($pageCode) && !empty($pageSize)){
@@ -49,6 +50,7 @@
              $pageBean['totaPage'] = $pageBean['totalRecord']  % $pageSize == 0 ? $tp : $tp + 1;  //得到总页数
              $pageBean['pageCode'] = $pageCode; //当前页码
              $pageBean['pageSize'] = $pageSize; //每页记录数
+             $pageBean['url'] = "p=back&c=ArticleType";
              $arr['pageBean'] = $pageBean;
          }
          return $arr;
