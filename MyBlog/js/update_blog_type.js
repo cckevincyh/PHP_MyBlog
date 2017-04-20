@@ -71,7 +71,7 @@ function validUpdateBlogType() {
 }
 
 
-function updateProductInfo(id){
+function updateType(id){
 
     $.ajax({
         type: 'GET',

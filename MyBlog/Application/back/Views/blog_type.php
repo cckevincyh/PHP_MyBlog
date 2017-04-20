@@ -16,6 +16,7 @@
 <link href="/MyBlog/css/common.css" rel="stylesheet">
 <script charset="utf-8" src="/MyBlog/js/add_blog_type.js"></script>
 <script charset="utf-8" src="/MyBlog/js/update_blog_type.js"></script>
+<script charset="utf-8" src="/MyBlog/js/delete_blog_type.js"></script>
 </head>
        <div class="col-md-10">
               <div class="row">
@@ -52,9 +53,9 @@
 	                         	   <td><?php echo $result[$i]['tname']?></td>
 
 	                                <td>
-	                                	<button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#updateModal" onclick="updateProductInfo(<?php echo $result[$i]['tid']?>)">修改</button>
+	                                	<button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#updateModal" onclick="updateType(<?php echo $result[$i]['tid']?>)">修改</button>
 	                                	
-	                                		<button type="button" class="btn btn-danger btn-xs">删除</button>
+	                                		<button type="button" class="btn btn-danger btn-xs" onclick="deleteType(<?php echo $result[$i]['tid']?>)">删除</button>
 	                               	</td>                                              
                           	  </tbody>
                             <?php

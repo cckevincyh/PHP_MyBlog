@@ -60,8 +60,8 @@ class ArticleTypeController extends BaseController {
 
 
     public function updateTypeAction(){
-        $blogType = $_POST['blogType'];
-        $blogId = $_POST['blogId'];
+        $blogType = @$_POST['blogType'];
+        $blogId = @$_POST['blogId'];
         if(!empty($blogType) && !empty($blogId)){
             //添加新博客分类
             $articleTypeModel = ModelFactory::getModel("ArticleTypeModel");
@@ -73,6 +73,22 @@ class ArticleTypeController extends BaseController {
             }
         }else{
             echo "修改失败";
+        }
+    }
+
+
+    public function deleteTypeAction(){
+        $id = @$_GET['tid'];
+        if (!empty($id)) {
+            $articleTypeModel = ModelFactory::getModel("ArticleTypeModel");
+            $result = $articleTypeModel->deleteArticleType($id);
+            if($result){
+                echo "删除成功";
+            }else{
+                echo "删除失败";
+            }
+        }else{
+            echo "删除失败";
         }
     }
 }

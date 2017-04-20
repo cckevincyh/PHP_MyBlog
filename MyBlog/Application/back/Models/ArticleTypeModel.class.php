@@ -108,4 +108,17 @@
          }
          return false;
      }
+
+
+
+     public  function  deleteArticleType($tid){
+         $sql = "DELETE  FROM tb_type  WHERE tid=?";
+         $stmt = $this->_dao->prepare($sql);
+         if(!empty($tid)){
+             $stmt->bindValue(1,$tid);
+             $result = $stmt->execute();
+             return $result;
+         }
+         return false;
+     }
  }

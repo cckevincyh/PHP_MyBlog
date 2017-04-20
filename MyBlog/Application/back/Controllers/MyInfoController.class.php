@@ -73,4 +73,6 @@ class MyInfoController extends BaseController {
         }
         require VIEW_PATH."setting_myInfo.php";
     }
+
+
 }
