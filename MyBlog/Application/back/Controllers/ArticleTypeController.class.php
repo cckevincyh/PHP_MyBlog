@@ -39,6 +39,17 @@ class ArticleTypeController extends BaseController {
 
 
     /**
+     * 根据获取博客类型
+     */
+    public function getTypesAction(){
+        $articleTypeModel = ModelFactory::getModel("ArticleTypeModel");
+        $result = $articleTypeModel->getArticlTypes();
+        echo json_encode($result);
+    }
+
+
+
+    /**
      *添加新的博客分类
      */
     public function addTypeAction(){

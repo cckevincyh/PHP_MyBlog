@@ -19,6 +19,7 @@
 <script charset="utf-8" src="/MyBlog/js/kindeditor-4.1.10/kindeditor-min.js"></script>
 <script charset="utf-8" src="/MyBlog/js/kindeditor-4.1.10/lang/zh_CN.js"></script>
 <script charset="utf-8" src="/MyBlog/js/add_blog_detail.js"></script>
+<script charset="utf-8" src="/MyBlog/js/getBlogType.js"></script>
 </head>
 
 
@@ -37,12 +38,7 @@
     <div class="col-sm-2">
 
        <select class="form-control" id="type" >
-        <option>    请选择类别   </option>
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
+        <option value="-1">请选择类别</option>
     </select>
     </div>
      <div class="col-sm-2">
@@ -85,7 +81,7 @@
 										 <div class="form-group">
 											<label for="firstname" class="col-sm-2 control-label">分类名称</label>
 												<div class="col-sm-9">
-													<input type="text" class="form-control" id="addTitle"  placeholder="请输入分类名称">
+													<input type="text" class="form-control" id="typeName"  placeholder="请输入分类名称">
 												<label class="control-label" for="addTitle" style="display: none;"></label>				
 												</div>
 										</div>
@@ -97,7 +93,7 @@
 												<div class="modal-footer">
 													<button type="button" class="btn btn-default" data-dismiss="modal">关闭
 													</button>
-													<button type="button" class="btn btn-primary" id="addArticle">
+													<button type="button" class="btn btn-primary" id="addType">
 														添加
 													</button>
 												</div>
@@ -106,6 +102,28 @@
 									</div>
 
                                  </form>	
- 								<!--------------------------------------添加的模糊框------------------------>  
+ 								<!--------------------------------------添加的模糊框------------------------>
 
+
+
+
+
+<div class="modal fade" id="modal_info" tabindex="-1" role="dialog" aria-labelledby="addModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="infoModalLabel">提示</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-12" id="div_info"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" id="btn_info_close" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
 </html>
