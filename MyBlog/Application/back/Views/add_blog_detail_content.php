@@ -29,6 +29,7 @@
     <label for="firstname" class="col-sm-12 control-label add_blog">标题</label>
     <div class="col-sm-12">
       <input type="text" class="form-control" id="title" placeholder="请输入标题">
+        <label class="control-label" for="title" style="display:none;"></label>
     </div>
 
   </div>
@@ -39,23 +40,23 @@
 
        <select class="form-control" id="type" >
         <option value="-1">请选择类别</option>
-    </select>
+        </select>
+        <label class="control-label" for="type" style="display:none;"></label>
     </div>
      <div class="col-sm-2">
  			<button type="button" class="btn btn-default" id="btn_add"   data-toggle="modal" data-target="#addModal">添加新分类</button>
     </div>
 	<div class="post_blog">
 			
- 			<button type="button" class="btn btn-success">发布博文</button>
+ 			<button type="button" class="btn btn-success" id="post_blog">发布博文</button>
     </div>
   </div>
-  
 
         <div class="article_content">
-        	 <label for="firstname" class="col-sm-12 control-label add_blog">内容</label>
-        	<textarea id="add_blog_detail"></textarea>
+                 <label for="firstname" class="col-sm-12 control-label add_blog">内容</label>
+                <textarea id="add_blog_detail"></textarea>
         </div>
-        
+  </div>
     
 </body>
 
