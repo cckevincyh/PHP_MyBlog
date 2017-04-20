@@ -12,7 +12,7 @@ class MyInfoModel extends BaseModel{
      * 得到个人资料
      * @return mixed
      */
-    public function getMyInfoB(){
+    public function getMyInfo(){
         $sql = "SELECT * FROM tb_myinfo WHERE mid= 1";
         $stmt = $this->_dao->prepare($sql);
         $stmt->execute();

@@ -11,7 +11,7 @@ class MyInfoController extends BaseController {
 
     public function indexAction(){
         $myInfo =  ModelFactory::getModel("MyInfoModel");
-        $result = $myInfo->getMyInfoB();
-        require VIEW_PATH."right_panel.php";
+        $result = $myInfo->getMyInfo();
+        echo json_encode($result);
     }
 }
