@@ -26,7 +26,7 @@
 			<iframe class="blog_center"   src="Application\back\Views\blog_content.php" frameborder="0" scrolling="no" ></iframe>
 		 </td>
 		 <td width="20%">
-			<iframe class="blog_right"  src="Application\front\Views\right_panel.php" frameborder="0" scrolling="no"></iframe>
+			<iframe class="blog_right"  src="Application\back\Views\right_panel.php" frameborder="0" scrolling="no"></iframe>
 		 </td>
  	</tr>
      

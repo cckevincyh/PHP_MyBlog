@@ -9,6 +9,13 @@
 class MyInfoController extends BaseController {
 
 
+
+    public function indexAction(){
+        $myInfo =  ModelFactory::getModel("MyInfoModel");
+        $result = $myInfo->getMyInfo();
+        echo json_encode($result);
+    }
+
     /**
      * 修改或者添加个人资料
      */
@@ -45,7 +52,7 @@ class MyInfoController extends BaseController {
     /**
      * 加载个人资料
      */
-    public function indexAction(){
+    public function getMyInfoAction(){
         $myInfoModel = ModelFactory::getModel("MyInfoModel");
         $myInfo = $myInfoModel->getMyInfo();
         $name = "";

@@ -11,6 +11,8 @@ class MyInfoController extends BaseController {
 
     public function indexAction(){
         $myInfo =  ModelFactory::getModel("MyInfoModel");
+        //增加访问量
+        $myInfo->addPageView();
         $result = $myInfo->getMyInfo();
         echo json_encode($result);
     }

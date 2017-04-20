@@ -14,7 +14,7 @@
             <div class="logo">设置</div>
       <div class="tabs clearfix">
 		  <a href="/MyBlog/index.php?p=back&a=changePwd" class="on" target="content"  id="changepwd" onclick="onPwd()">帐号安全</a>
-		  <a href="/MyBlog/index.php?p=back&c=MyInfo" target="content"  id="privacy" onclick="onPrivacy()">个人设置</a>
+		  <a href="/MyBlog/index.php?p=back&c=MyInfo&a=getMyInfo" target="content"  id="privacy" onclick="onPrivacy()">个人设置</a>
           <a href="/MyBlog/index.php?p=back&c=ArticleType" target="content"  id="blog_type" onclick="onBlogType()">博文分类设置</a>
       </div>
 
