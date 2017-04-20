@@ -11,6 +11,7 @@ KindEditor.ready(function(K) {
         height:"750px",
         allowFileManager : true ,  //是否允许上传文件
         resizeType:0, //1只能拖动高度，0不能拖动
+        readonlyMode : true,//初始化设置为只读模式
         allowImageUpload:true,//允许上传图片
         allowImageRemote:false,//去掉网络图片按钮
         allowFileManager:true, //允许对上传图片进行管理
@@ -23,13 +24,6 @@ KindEditor.ready(function(K) {
             this.sync();
         },
         items:[
-            'source', '|', 'undo', 'redo', '|', 'preview',  'cut', 'copy', 'paste',
-            '|', 'justifyleft', 'justifycenter', 'justifyright',
-            'justifyfull', 'insertorderedlist', 'insertunorderedlist', 'indent', 'outdent', 'subscript',
-            'superscript', 'clearhtml', 'quickformat', 'selectall', '|', 'fullscreen',
-            'formatblock', 'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold',
-            'italic', 'underline', 'strikethrough', 'lineheight', 'removeformat', '|', 'image',
-            'table', 'hr', 'emoticons',  '|'
         ]
     });
 });

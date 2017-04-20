@@ -20,6 +20,8 @@
 <script charset="utf-8" src="/MyBlog/js/kindeditor-4.1.10/lang/zh_CN.js"></script>
 <script charset="utf-8" src="/MyBlog/js/add_blog_detail.js"></script>
 <script charset="utf-8" src="/MyBlog/js/getBlogType.js"></script>
+<script src="/MyBlog/jQuery/ajaxfileupload.js"></script>
+<script src="/MyBlog/js/ajaxImgUpload.js"></script>
 </head>
 
 
@@ -33,7 +35,19 @@
     </div>
 
   </div>
-  
+
+  <div class="form-group">
+      <label for="firstname" class="col-sm-12 control-label add_blog">博文封面</label>
+      <div class="col-sm-2">
+
+          <input type="hidden" id="img"/>
+
+          <input type="file" id="imgUpload" name="imgUpload"  class="control-label"/><br/>
+          <label class="control-label" for="imgUpload" style="display: none;"></label>
+          <p class="help-block"><img class="img-rounded" src="#" width="100" height="100" id="img1" alt="请上传博文封面"  /></p>
+      </div>
+  </div>
+
    <div class="form-group">
     <label for="firstname" class="col-sm-12 control-label add_blog">分类</label>
     <div class="col-sm-2">
@@ -52,12 +66,11 @@
     </div>
   </div>
 
+
         <div class="article_content">
                  <label for="firstname" class="col-sm-12 control-label add_blog">内容</label>
                 <textarea id="add_blog_detail"></textarea>
         </div>
-  </div>
-    
 </body>
 
 

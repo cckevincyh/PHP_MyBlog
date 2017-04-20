@@ -20,6 +20,7 @@ $(function () {
                 cache: false,
                 data: {
                     title:$.trim($("#title").val()),
+                    img:$.trim($("#img").val()),
                     type:$.trim($("#type").val()),
                     content:encodeURIComponent(editor.html()),
 
@@ -57,7 +58,7 @@ var addEditor;
 KindEditor.ready(function(K) {
     //在当前网页中，查找<textarea id = "add_blog_detail"></textarea>，并替换成kindeditor编辑器。
         editor = K.create('textarea[id="add_blog_detail"]', {
-        height:"750px",
+        height:"450px",
         allowFileManager : true ,  //是否允许上传文件
         resizeType:0, //1只能拖动高度，0不能拖动
         allowImageUpload:true,//允许上传图片
@@ -110,6 +111,18 @@ function validBlog(){
         $('#type').parent().removeClass("has-error");
         $('#type').next().text("");
         $("#type").next().hide();
+    }
+
+    var img = $.trim($("#imgUpload").val());
+    if(img == ""){
+        $('#imgUpload').parent().addClass("has-error");
+        $('#imgUpload').next().text("请上传图片");
+        $("#imgUpload").next().show();
+        flag = false;
+    }else {
+        $('#imgUpload').parent().removeClass("has-error");
+        $('#imgUpload').next().text("");
+        $("#imgUpload").next().hide();
     }
 
 

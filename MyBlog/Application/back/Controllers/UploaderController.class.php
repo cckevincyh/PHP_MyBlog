@@ -23,6 +23,13 @@ class UploaderController extends BaseController {
 
     }
 
+    //上传博文封面
+    public function uploaderImgAction(){
+        $fileName = "imgUpload";
+        $this->uploader($fileName);
+
+    }
+
 
 
 
