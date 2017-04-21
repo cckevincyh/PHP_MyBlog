@@ -111,4 +111,15 @@ class ArticleModel extends BaseModel {
         }
         return $arr;
     }
+
+
+    public function deleteBlog($aid){
+        $sql = "DELETE FROM  tb_article  WHERE aid=?";
+        $stmt = $this->_dao->prepare($sql);
+        if(!empty($aid)){
+            $stmt->bindValue(1,$aid);
+            $result = $stmt->execute();
+            return $result;
+        }
+    }
 }

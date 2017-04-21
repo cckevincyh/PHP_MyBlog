@@ -12,11 +12,12 @@
 
 <script src="/MyBlog/js/jquery.min.js"></script>
 <script src="/MyBlog/js/bootstrap.min.js"></script>
+<script src="/MyBlog/js/delete_blog.js"></script>
 <link href="/MyBlog/css/blog_content.css" rel="stylesheet">
 <link href="/MyBlog/css/common.css" rel="stylesheet">
 </head>
 
-
+<body>
 <?php
     for ($i = 0; $i<count($result)-1; $i++) {
 
@@ -58,7 +59,7 @@
                     </div>
 
                     <div class="blog-delete">
-                        <a href="#">删除</a>
+                        <a href="#" onclick="deleteBlog(<?php echo $result[$i]["aid"]?>)">删除</a>
                     </div>
                 </div>
             </div>
@@ -122,6 +123,24 @@ if($result['pageBean']['totaPage']<=5){
 </div>
 
 
-<body>
 </body>
+
+<div class="modal fade" id="modal_info" tabindex="-1" role="dialog" aria-labelledby="addModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="infoModalLabel">提示</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-12" id="div_info"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" id="btn_info_close" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
 </html>

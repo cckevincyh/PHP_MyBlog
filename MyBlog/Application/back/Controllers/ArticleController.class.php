@@ -70,6 +70,21 @@ class ArticleController extends BaseController {
         }
     }
 
+    public  function deleteBlogAction(){
+        $aid = @$_GET['id'];
+        if(!empty($aid)){
+            $articleModel = ModelFactory::getModel("ArticleModel");
+            $result = $articleModel->deleteBlog($aid);
+            if($result){
+                echo "删除成功";
+            }else{
+                echo "删除失败";
+            }
+        }else{
+            echo "删除失败,请重试";
+        }
+    }
+
 
 
 
