@@ -27,25 +27,16 @@
                 <div class="panel_Category">
                     <ul class="panel_head"><span>文章分类</span></ul>
                     <ul class="panel_body">
-                        <li class="panel_li">
-                            <a href="#" target="center">数据结构</a><span>(86)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >算法入门</a><span>(36)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >Struts2</a><span>(18)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >Hibernate</a><span>(26)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >Spring</a><span>(7)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >SSH框架</a><span>(48)</span>
-                        </li>
+                        <?php
+                        for($i = 0; $i<count($typeList);$i++){
 
+                            ?>
+                            <li class="panel_li">
+                                <a href="/MyBlog/index.php?c=Article&a=getArticleByType&type=<?php echo $typeList[$i]['tid']?>" target="center"><?php echo $typeList[$i]['tname']?></a><span>(<?php echo $typeList[$i]['num']?>)</span>
+                            </li>
+                            <?php
+                        }
+                        ?>
                     </ul>
                 </div>
 
@@ -63,24 +54,16 @@
                 <div class="panel_Click_Ranking">
                     <ul class="panel_head"><span>阅读排行</span></ul>
                     <ul class="panel_body">
-                        <li class="panel_li">
-                            <a href="#" >设顺序表va中的数据元素递增..</a><span>(1286)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >设顺序表va中的数据元素递增..</a><span>(36)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >设顺序表va中的数据元素递增..</a><span>(18)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >设顺序表va中的数据元素递增..</a><span>(26)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >设顺序表va中的数据元素递增..</a><span>(7)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >设顺序表va中的数据元素递增..</a><span>(48)</span>
-                        </li>
+                        <?php
+                        for($i = 0; $i<count($watchList);$i++){
+
+                            ?>
+                            <li class="panel_li">
+                                <a href="/Myblog/index.php?a=blog_detail&id=<?php echo $watchList[$i]["aid"]?>" target="_blank" ><?php echo $watchList[$i]['atitle']?></a><span>(<?php echo $watchList[$i]['page_view']?>)</span>
+                            </li>
+                            <?php
+                        }
+                        ?>
 
                     </ul>
                 </div>
@@ -89,32 +72,23 @@
                 <div class="panel_Comment_Ranking">
                     <ul class="panel_head"><span>点赞排行</span></ul>
                     <ul class="panel_body">
-                        <li class="panel_li">
-                            <a href="#" >设顺序表va中的数据元素递增..</a><span>(1286)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >设顺序表va中的数据元素递增..</a><span>(36)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >设顺序表va中的数据元素递增..</a><span>(18)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >设顺序表va中的数据元素递增..</a><span>(26)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >设顺序表va中的数据元素递增..</a><span>(7)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >设顺序表va中的数据元素递增..</a><span>(48)</span>
-                        </li>
+                        <?php
+                        for($i = 0; $i<count($likeList);$i++){
 
+                            ?>
+                            <li class="panel_li">
+                                <a href="/Myblog/index.php?a=blog_detail&id=<?php echo $likeList[$i]["aid"]?>" target="_blank"><?php echo $likeList[$i]['atitle']?></a><span>(<?php echo $likeList[$i]['like_num']?>)</span>
+                            </li>
+                            <?php
+                        }
+                        ?>
                     </ul>
                 </div>
 
             </div>
 		 </td>
 		 <td width="60%">
-			<iframe class="blog_center"   src="/MyBlog/index.php?p=back&c=Article&a=getLimitBlogs" frameborder="0" scrolling="no"></iframe>
+			<iframe class="blog_center"  name="center" src="/MyBlog/index.php?p=back&c=Article&a=getLimitBlogs" frameborder="0" scrolling="no"></iframe>
 		 </td>
 		 <td width="20%">
 			<iframe class="blog_right"  src="Application\back\Views\right_panel.php" frameborder="0" scrolling="no"></iframe>

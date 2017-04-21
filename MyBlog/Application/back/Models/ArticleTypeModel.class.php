@@ -110,7 +110,11 @@
      }
 
 
-
+     /**
+      * 删除博文分类
+      * @param $tid
+      * @return bool
+      */
      public  function  deleteArticleType($tid){
          $sql = "DELETE  FROM tb_type  WHERE tid=?";
          $stmt = $this->_dao->prepare($sql);
@@ -120,5 +124,19 @@
              return $result;
          }
          return false;
+     }
+
+     /**
+      * 获取全部博客分类
+      * @return array
+      */
+     public function getArticlTypesList(){
+         $sql = "SELECT tb_type.tid,tb_type.tname,count(*) as num from tb_article,tb_type where tb_article.tid = tb_type.tid  group by tb_article.tid";
+         $stmt = $this->_dao->query($sql);
+         $arr = array();
+         while (  $result = $stmt->fetch(PDO::FETCH_ASSOC) ){
+             $arr[] = $result;
+         }
+         return $arr;
      }
  }
