@@ -29,4 +29,17 @@ class ArticleController extends BaseController {
         echo json_encode($result);
         //   require VIEW_PATH."blog_detail_content.php";
     }
+
+
+
+    public function likeAction(){
+        $aid = @$_GET['id'];
+        $articleModel = ModelFactory::getModel("ArticleModel");
+        $result = $articleModel->likeById($aid);
+        if($result){
+            echo "点赞成功";
+        }else{
+            echo "点赞失败";
+        }
+    }
 }

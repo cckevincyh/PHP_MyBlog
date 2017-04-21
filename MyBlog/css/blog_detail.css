@@ -58,6 +58,13 @@ h1 {
 	margin-right: 20px;
 }
 
+.link_like_on{
+    background-image:url(/Myblog/img/like_img_on.png);
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+
 
 .blog-info{
 	text-align: right;

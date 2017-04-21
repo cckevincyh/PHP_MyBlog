@@ -33,7 +33,8 @@
 		<div class="blog-info">
 				<span class="link_postdate" title="发布时间" id="postdate"></span>
 				<span class="link_view" title="阅读次数" id="page_view"></span>
-				<span class="link_like" title="点赞次数" > <a href="#" id="like_num">点赞</a></span>
+                <input type="hidden" id="like">
+				<span class="link_like" title="点赞次数" id="link_like"> <a href="#" id="like_num" onclick="like(<?php echo $id?>)">点赞</a></span>
 		</div>
 		
 		 <hr>

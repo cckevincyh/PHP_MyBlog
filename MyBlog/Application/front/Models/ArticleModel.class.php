@@ -88,6 +88,16 @@ class ArticleModel extends BaseModel {
     }
 
 
-
+    public function likeById($aid){
+        $sql = "UPDATE tb_article SET like_num = like_num + 1 WHERE aid = ?";
+        if(!empty($aid)){
+            $stmt = $this->_dao->prepare($sql);
+            $stmt->bindValue(1,$aid);
+            $result = $stmt->execute();
+           return $result;
+        }else{
+           return false;
+        }
+    }
 
 }

@@ -41,6 +41,7 @@ function getBlogDetail(id) {
             $("#postdate").text(data.atime);
             $("#page_view").text("浏览 ("+data.page_view+")");
             $("#like_num").text("点赞 ("+data.like_num+")");
+            $("#like").val(data.like_num);
             $("#type").text(data.tname);
             editor.html(data.acontent);
            // alert(data);
@@ -51,6 +52,31 @@ function getBlogDetail(id) {
         }
     });
 
+}
+
+
+
+function like(id) {
+   var className = $("#link_like").attr("class");
+    if(className == "link_like"){
+        var likeNum = parseInt($("#like").val()) + 1;
+        $("#like_num").text("点赞 ("+likeNum+")");
+        $("#link_like").attr("class","link_like_on");
+        $.ajax({
+            type: 'GET',
+            url: '/MyBlog/index.php?c=Article&a=like&id='+id,
+            cache: false,
+            success: function (data) {
+                alert(data);
+
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                alert("提交失败，请重试");
+            }
+        });
+    }else{
+        alert("已点赞");
+    }
 }
 
 
