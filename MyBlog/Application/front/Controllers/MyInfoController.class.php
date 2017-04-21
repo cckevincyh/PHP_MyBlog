@@ -16,4 +16,10 @@ class MyInfoController extends BaseController {
         $result = $myInfo->getMyInfo();
         echo json_encode($result);
     }
+
+    public function getImgAction(){
+        $myInfo =  ModelFactory::getModel("MyInfoModel");
+        $result = $myInfo->getMyHeadImg();
+        echo json_encode($result);
+    }
 }

@@ -22,6 +22,16 @@ class MyInfoModel extends BaseModel{
     }
 
 
+    public function getMyHeadImg(){
+        $sql = "SELECT head_img FROM tb_myinfo WHERE mid= 1";
+        $stmt = $this->_dao->prepare($sql);
+        $stmt->execute();
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $result;
+
+    }
+
+
 
     /**
      * 增加访问量

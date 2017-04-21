@@ -11,7 +11,7 @@
 <script src="/MyBlog/jQuery/jquery-3.1.1.min.js"></script>
 <script src="/MyBlog/js/bootstrap-dropdown.min.js"></script>
 
-
+<script src="/MyBlog/js/getImg.js"></script>
 <script src="/MyBlog/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="/MyBlog/css/blog_navbar.css">
 
@@ -25,16 +25,16 @@
 <nav class="navbar navbar-inverse blog_navbar" role="navigation">
     <div class="container-fluid">
     <div class="navbar-header">
-        <a class="navbar-brand blog_brand" href="#">我的个人博客</a>
+        <a class="navbar-brand blog_brand" href="/MyBlog/index.php?p=back" target="_parent">我的个人博客</a>
     </div>
     <div>
         <ul class="nav navbar-nav">
-            <li class="_active"><a href="#" class="a_navbar_text">首页</a></li>
+            <li class="_active"><a href="/MyBlog/index.php?p=back" class="a_navbar_text" target="_parent">首页</a></li>
 			<li><a href="#" class="a_navbar_text">关于我</a></li>
         </ul>
          <ul class="nav navbar-nav navbar-right"> 
 			 	 <li class="dropdown">
-						<a data-hover="dropdown" href="#" role="button"> <img src="#" class="img-circle" width="35" height="35"></a>
+						<a data-hover="dropdown" href="#" role="button"> <img src="#" class="img-circle" width="35" height="35" id="head_img"></a>
 
 							 <ul class="dropdown-menu">
 								<li><a href="/MyBlog/index.php?p=back&a=setting" target="_parent">设置</a></li>

@@ -6,7 +6,7 @@
  * Time: 9:42
  */
 
-class IndexController{
+class IndexController extends BaseController{
 
     public function indexAction(){
 

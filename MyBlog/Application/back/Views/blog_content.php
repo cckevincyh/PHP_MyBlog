@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>123</title>
+<title>个人博客</title>
 <link rel="stylesheet" href="/MyBlog/css/bootstrap.min.css">
 <link rel="stylesheet" href="/MyBlog/css/bootstrap.css"><!-- 去掉模糊框的暗色背景-->
 <link rel="stylesheet" href="/MyBlog/css/bootstrap-theme.min.css">

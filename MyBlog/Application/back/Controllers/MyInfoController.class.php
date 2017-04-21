@@ -16,6 +16,7 @@ class MyInfoController extends BaseController {
         echo json_encode($result);
     }
 
+
     /**
      * 修改或者添加个人资料
      */
