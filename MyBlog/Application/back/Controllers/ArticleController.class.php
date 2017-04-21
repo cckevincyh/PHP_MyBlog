@@ -17,6 +17,9 @@ class ArticleController extends BaseController {
             $articleModel = ModelFactory::getModel("ArticleModel");
             $result = $articleModel->addBlog($title,$type,$content,$img);
             if($result){
+                //同时让博文数量增加
+                $myInfoModel = ModelFactory::getModel("MyInfoModel");
+                $myInfoModel->addBlogNum();
                 echo "添加成功";
             }else{
                 echo "添加失败";
