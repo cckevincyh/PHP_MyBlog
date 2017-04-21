@@ -18,7 +18,7 @@ class IndexController extends BaseController{
         $likeList = $articleModel->likeList($likeSize);
         //获取文章分类列表
         $articleTypeModel = ModelFactory::getModel("ArticleTypeModel");
-        $typeList = $articleTypeModel->getArticlTypesList();
+        $typeList = $articleTypeModel->getArticleTypesList();
         require VIEW_PATH."index.php";
     }
 

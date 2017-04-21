@@ -70,6 +70,9 @@ class ArticleTypeController extends BaseController {
     }
 
 
+    /**
+     * 修改博文分类
+     */
     public function updateTypeAction(){
         $blogType = @$_POST['blogType'];
         $blogId = @$_POST['blogId'];
@@ -88,6 +91,9 @@ class ArticleTypeController extends BaseController {
     }
 
 
+    /**
+     * 删除博文分类
+     */
     public function deleteTypeAction(){
         $id = @$_GET['tid'];
         if (!empty($id)) {

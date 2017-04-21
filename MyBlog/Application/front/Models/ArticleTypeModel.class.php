@@ -31,7 +31,7 @@
       * 获取全部博客分类
       * @return array
       */
-     public function getArticlTypesList(){
+     public function getArticleTypesList(){
          $sql = "SELECT tb_type.tid,tb_type.tname,count(*) as num from tb_article,tb_type where tb_article.tid = tb_type.tid  group by tb_article.tid";
          $stmt = $this->_dao->query($sql);
          $arr = array();

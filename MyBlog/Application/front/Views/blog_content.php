@@ -36,7 +36,7 @@ for ($i = 0; $i<count($result)-1; $i++) {
 
             <div class="author-info">
                 <div class="author">
-                    <a href="/about/">
+                    <a href="#">
                         <span>作者：<?php echo $result[$i]["mname"] ?></span>
                     </a>
                 </div>

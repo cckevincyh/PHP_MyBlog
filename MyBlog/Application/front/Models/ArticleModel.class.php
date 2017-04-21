@@ -65,7 +65,21 @@ class ArticleModel extends BaseModel {
             while (  $result = $stmt->fetch(PDO::FETCH_ASSOC) ){
                 $result['acontent'] = urldecode($result['acontent']);   //URL解码，解出来是带有样式的html文本
                 //strip_tags — 从字符串中去除 HTML 和 PHP 标记
-                $result['content'] = strip_tags($result['acontent']);   //得到存文本的内容
+                $content = strip_tags($result['acontent']);   //得到存文本的内容
+                //对这些上面的博文需要进行特殊处理，限制其显示长度，长度限制为125个长度，多余的用...代替
+                //string substr ( string $string , int $start [, int $length ] ) 返回字符串 string 由 start 和 length 参数指定的子字符串。
+                if(mb_strlen($content,'UTF-8')>125){
+                    $content = mb_substr($content,0,124,"UTF-8");
+                    $content .="....";
+                }
+                $result['content'] = $content;
+                //对标题的也是需要限制的,长度限制为45，多余的用...代替
+                $title = $result['atitle'];
+                if(mb_strlen($title,'UTF-8')>45){
+                    $title = mb_substr($title,0,44,"UTF-8");
+                    $title .="....";
+                }
+                $result['atitle'] = $title;
                 $arr[] = $result;
             }
             $pageBean = array();   //装载分页信息
@@ -125,6 +139,13 @@ class ArticleModel extends BaseModel {
         $stmt = $this->_dao->query($sql);
         $arr = array();
         while (  $result = $stmt->fetch(PDO::FETCH_ASSOC) ){
+            //对标题的长度是需要限制的,长度限制为22，多余的用...代替
+            $title = $result['atitle'];
+            if(mb_strlen($title,'UTF-8')>22){
+                $title = mb_substr($title,0,21,"UTF-8");
+                $title .="....";
+            }
+            $result['atitle'] = $title;
             $arr[] = $result;
         }
         return $arr;
@@ -140,6 +161,13 @@ class ArticleModel extends BaseModel {
         $stmt = $this->_dao->query($sql);
         $arr = array();
         while (  $result = $stmt->fetch(PDO::FETCH_ASSOC) ){
+            //对标题的长度是需要限制的,长度限制为22，多余的用...代替
+            $title = $result['atitle'];
+            if(mb_strlen($title,'UTF-8')>22){
+                $title = mb_substr($title,0,21,"UTF-8");
+                $title .="....";
+            }
+            $result['atitle'] = $title;
             $arr[] = $result;
         }
         return $arr;
@@ -168,7 +196,22 @@ class ArticleModel extends BaseModel {
             while (  $result = $stmt->fetch(PDO::FETCH_ASSOC) ){
                 $result['acontent'] = urldecode($result['acontent']);   //URL解码，解出来是带有样式的html文本
                 //strip_tags — 从字符串中去除 HTML 和 PHP 标记
-                $result['content'] = strip_tags($result['acontent']);   //得到存文本的内容
+                $content = strip_tags($result['acontent']);   //得到存文本的内容
+                //对这些上面的博文需要进行特殊处理，限制其显示长度，长度限制为125个长度，多余的用...代替
+                //string substr ( string $string , int $start [, int $length ] ) 返回字符串 string 由 start 和 length 参数指定的子字符串。
+                if(mb_strlen($content,'UTF-8')>125){
+                    $content = mb_substr($content,0,124,"UTF-8");
+                    $content .="....";
+                }
+                $result['content'] = $content;
+                //对标题的也是需要限制的,长度限制为45，多余的用...代替
+                $title = $result['atitle'];
+                if(mb_strlen($title,'UTF-8')>45){
+                    $title = mb_substr($title,0,44,"UTF-8");
+                    $title .="....";
+                }
+                $result['atitle'] = $title;
+
                 $arr[] = $result;
             }
             $pageBean = array();   //装载分页信息

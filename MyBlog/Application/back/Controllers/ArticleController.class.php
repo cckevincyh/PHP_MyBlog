@@ -8,6 +8,9 @@
 
 class ArticleController extends BaseController {
 
+    /**
+     * 添加博文
+     */
     public function addBlogAction(){
         $title = @$_POST['title'];
         $type = @$_POST['type'];
@@ -29,6 +32,9 @@ class ArticleController extends BaseController {
         }
     }
 
+    /**
+     * 根据博文分类得到相关分类的博文
+     */
     public function getBlogByIdAction(){
         $aid = @$_GET['id'];
         $articleModel = ModelFactory::getModel("ArticleModel");
@@ -38,6 +44,9 @@ class ArticleController extends BaseController {
      //   require VIEW_PATH."blog_detail_content.php";
     }
 
+    /**
+     * 对博文进行分页
+     */
     public function getLimitBlogsAction(){
         $pageCode = @$_GET['pageCode'];
         // 获取页面传递过来的当前页码数
@@ -51,6 +60,9 @@ class ArticleController extends BaseController {
         require VIEW_PATH."blog_content.php";
     }
 
+    /**
+     * 修改博文
+     */
     public function updateBlogAction(){
         $title = @$_POST['title'];
         $type = @$_POST['type'];
@@ -71,6 +83,9 @@ class ArticleController extends BaseController {
     }
 
 
+    /**
+     * 删除博文
+     */
     public  function deleteBlogAction(){
         $aid = @$_GET['id'];
         if(!empty($aid)){

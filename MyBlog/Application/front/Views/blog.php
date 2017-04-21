@@ -30,7 +30,6 @@
     <div>
         <ul class="nav navbar-nav">
             <li class="_active"><a href="/MyBlog/index.php" class="a_navbar_text" target="_parent">首页</a></li>
-			<li><a href="#" class="a_navbar_text">关于我</a></li>
         </ul>
          <ul class="nav navbar-nav navbar-right"> 
 			 	 <li class="dropdown">
