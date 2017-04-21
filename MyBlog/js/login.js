@@ -6,7 +6,7 @@ $(function () {
 
         $.ajax({
             type: 'POST',
-            url: 'index.php?p=back&c=Login&a=login',
+            url: 'index.php?c=Login&a=login',
             cache: false,
             data: {
                 username: $.trim($("#username").val()),

@@ -40,7 +40,7 @@
                                  <li class="divider"></li>
                                  <li><a href="/MyBlog/index.php?p=back&a=add_blog" target="_parent">写博客</a></li>
 								 <li class="divider"></li>
-								<li><a href="/MyBlog/index.php?p=back&c=Login&a=logout" target="_parent">登出</a></li>
+								<li><a href="/MyBlog/index.php?c=Login&a=logout" target="_parent">登出</a></li>
 								</ul>
 				</li>
   		 </ul>

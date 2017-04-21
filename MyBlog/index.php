@@ -15,6 +15,13 @@ define("DS", DIRECTORY_SEPARATOR);//DIRECTORY_SEPARATOR表示“目录分隔符�
 
 define("ROOT", __DIR__ . DS);	//当前的根目录：
 //echo ROOT;
+//权限拦截
+if($p=="back"){
+    session_start();
+    if(empty($_SESSION['user'])){
+        exit(require ROOT."nopass.html");
+    }
+}
 define("APP", ROOT . 'Application' . DS);	//application的完整路径
 define("FRAMEWORK", ROOT . 'Framework' . DS);	//框架基础类所在路径
 define("PLAT_PATH", APP . PLAT . DS);	//当前平台所在目录
