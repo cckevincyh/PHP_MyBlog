@@ -76,4 +76,18 @@ class ArticleModel extends BaseModel {
         }
         return $arr;
     }
+
+
+    public function addPageView($aid){
+        $sql = "UPDATE tb_article SET page_view = page_view + 1 WHERE aid = ?";
+        if(!empty($aid)){
+            $stmt = $this->_dao->prepare($sql);
+            $stmt->bindValue(1,$aid);
+            $result = $stmt->execute();
+        }
+    }
+
+
+
+
 }

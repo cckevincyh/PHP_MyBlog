@@ -20,10 +20,10 @@
  	</tr>
     <tr>
 		<td width="20%">
-			<iframe class="blog_left"  src="Application\back\Views\left_panel.php" frameborder="0" scrolling="no" ></iframe>
+			<iframe class="blog_left"  src="Application\back\Views\left_panel.php" frameborder="0" scrolling="no"></iframe>
 		 </td>
 		 <td width="60%">
-			<iframe class="blog_center"   src="/MyBlog/index.php?p=back&c=Article&a=getLimitBlogs" frameborder="0" scrolling="no" ></iframe>
+			<iframe class="blog_center"   src="/MyBlog/index.php?p=back&c=Article&a=getLimitBlogs" frameborder="0" scrolling="no"></iframe>
 		 </td>
 		 <td width="20%">
 			<iframe class="blog_right"  src="Application\back\Views\right_panel.php" frameborder="0" scrolling="no"></iframe>

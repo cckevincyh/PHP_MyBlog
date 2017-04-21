@@ -1,6 +1,6 @@
 /*全部设置为无边距*/
-*{
-	
+body{
+
 	margin:0;padding:0;
 }
 
@@ -14,7 +14,7 @@
 
 
 .blog_left{
-	
+
 	width: 320px;
 	height: 800px;
 	border:0px solid gray;
