@@ -65,6 +65,21 @@ class ArticleModel extends BaseModel {
     }
 
 
+    public function updateBlog($title,$type,$content,$img,$aid){
+        $sql = "UPDATE  tb_article SET  tid=?, atitle=?, acontent=?,img=? WHERE aid=?";
+        $stmt = $this->_dao->prepare($sql);
+        if(!empty($title) && !empty($type) && !empty($content)){
+            $stmt->bindValue(1,$type);
+            $stmt->bindValue(2,$title);
+            $stmt->bindValue(3,$content);
+            $stmt->bindValue(4,$img);
+            $stmt->bindValue(5,$aid);
+            $result = $stmt->execute();
+            return $result;
+        }
+    }
+
+
     public function getLimitArticles($pageCode,$pageSize){
         $page = ($pageCode - 1) * $pageSize;
         $sql = "SELECT tb_article.aid,tb_article.mid,tb_article.page_view,tb_article.img,tb_article.like_num,

@@ -51,6 +51,25 @@ class ArticleController extends BaseController {
         require VIEW_PATH."blog_content.php";
     }
 
+    public function updateBlogAction(){
+        $title = @$_POST['title'];
+        $type = @$_POST['type'];
+        $img = @$_POST['img'];
+        $content = @$_POST['content'];
+        $aid = @$_POST['id'];
+        if(!empty($title) && !empty($type) && !empty($content) && !empty($img) && !empty($aid)) {
+            $articleModel = ModelFactory::getModel("ArticleModel");
+            $result = $articleModel->updateBlog($title,$type,$content,$img,$aid);
+            if($result){
+                echo "编辑成功";
+            }else{
+                echo "编辑失败";
+            }
+        }else{
+            echo "编辑失败,请重试";
+        }
+    }
+
 
 
 

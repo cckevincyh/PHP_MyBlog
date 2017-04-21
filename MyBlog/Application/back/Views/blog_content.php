@@ -54,7 +54,7 @@
                     </div>
 
                     <div class="blog-edit">
-                       <a href="#">编辑</a>
+                       <a href="/Myblog/index.php?p=back&a=update_blog&id=<?php echo $result[$i]["aid"]?>" target="_blank">编辑</a>
                     </div>
 
                     <div class="blog-delete">

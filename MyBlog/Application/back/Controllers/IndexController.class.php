@@ -38,4 +38,15 @@ class IndexController{
         require VIEW_PATH."add_blog_detail.php";
     }
 
+
+    public function update_blogAction(){
+        $id = @$_GET['id'];
+        require VIEW_PATH."update_blog_detail.php";
+    }
+
+    public function update_blog_contentAction(){
+        $id = @$_GET['id'];
+        require VIEW_PATH."update_blog_detail_content.php";
+    }
+
 }
