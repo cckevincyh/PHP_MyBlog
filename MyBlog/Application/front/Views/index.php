@@ -28,25 +28,16 @@
                 <div class="panel_Category">
                     <ul class="panel_head"><span>文章分类</span></ul>
                     <ul class="panel_body">
-                        <li class="panel_li">
-                            <a href="#" target="center">数据结构</a><span>(86)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >算法入门</a><span>(36)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >Struts2</a><span>(18)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >Hibernate</a><span>(26)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >Spring</a><span>(7)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >SSH框架</a><span>(48)</span>
-                        </li>
+                        <?php
+                        for($i = 0; $i<count($typeList);$i++){
 
+                        ?>
+                        <li class="panel_li">
+                            <a href="#" target="center"><?php echo $typeList[$i]['tname']?></a><span>(<?php echo $typeList[$i]['num']?>)</span>
+                        </li>
+                            <?php
+                        }
+                        ?>
                     </ul>
                 </div>
 

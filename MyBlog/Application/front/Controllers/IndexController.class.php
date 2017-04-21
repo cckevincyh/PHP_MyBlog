@@ -16,7 +16,9 @@ class IndexController extends BaseController{
         //获取点赞排行榜
         $likeSize = 5;  //显示的内容数量
         $likeList = $articleModel->likeList($likeSize);
-
+        //获取文章分类列表
+        $articleTypeModel = ModelFactory::getModel("ArticleTypeModel");
+        $typeList = $articleTypeModel->getArticlTypesList();
          require VIEW_PATH."index.php";
     }
 
