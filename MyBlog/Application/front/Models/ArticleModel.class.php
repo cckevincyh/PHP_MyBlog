@@ -100,4 +100,24 @@ class ArticleModel extends BaseModel {
         }
     }
 
+    public function watchList($size){
+        $sql = "SELECT atitle,page_view FROM tb_article ORDER  BY page_view DESC LIMIT 0,$size";
+        $stmt = $this->_dao->query($sql);
+        $arr = array();
+        while (  $result = $stmt->fetch(PDO::FETCH_ASSOC) ){
+            $arr[] = $result;
+        }
+        return $arr;
+    }
+
+    public function likeList($size){
+        $sql = "SELECT atitle,like_num FROM tb_article ORDER  BY like_num DESC LIMIT 0,$size";
+        $stmt = $this->_dao->query($sql);
+        $arr = array();
+        while (  $result = $stmt->fetch(PDO::FETCH_ASSOC) ){
+            $arr[] = $result;
+        }
+        return $arr;
+    }
+
 }

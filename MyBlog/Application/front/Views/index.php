@@ -64,24 +64,16 @@
                 <div class="panel_Click_Ranking">
                     <ul class="panel_head"><span>阅读排行</span></ul>
                     <ul class="panel_body">
-                        <li class="panel_li">
-                            <a href="#" >设顺序表va中的数据元素递增..</a><span>(1286)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >设顺序表va中的数据元素递增..</a><span>(36)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >设顺序表va中的数据元素递增..</a><span>(18)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >设顺序表va中的数据元素递增..</a><span>(26)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >设顺序表va中的数据元素递增..</a><span>(7)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >设顺序表va中的数据元素递增..</a><span>(48)</span>
-                        </li>
+                        <?php
+                            for($i = 0; $i<count($watchList);$i++){
+
+                        ?>
+                            <li class="panel_li">
+                                <a href="#" ><?php echo $watchList[$i]['atitle']?></a><span>(<?php echo $watchList[$i]['page_view']?>)</span>
+                            </li>
+                        <?php
+                           }
+                        ?>
 
                     </ul>
                 </div>
@@ -90,25 +82,16 @@
                 <div class="panel_Comment_Ranking">
                     <ul class="panel_head"><span>点赞排行</span></ul>
                     <ul class="panel_body">
-                        <li class="panel_li">
-                            <a href="#" >设顺序表va中的数据元素递增..</a><span>(1286)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >设顺序表va中的数据元素递增..</a><span>(36)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >设顺序表va中的数据元素递增..</a><span>(18)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >设顺序表va中的数据元素递增..</a><span>(26)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >设顺序表va中的数据元素递增..</a><span>(7)</span>
-                        </li>
-                        <li class="panel_li">
-                            <a href="#" >设顺序表va中的数据元素递增..</a><span>(48)</span>
-                        </li>
+                        <?php
+                        for($i = 0; $i<count($likeList);$i++){
 
+                        ?>
+                        <li class="panel_li">
+                            <a href="#" ><?php echo $likeList[$i]['atitle']?></a><span>(<?php echo $likeList[$i]['like_num']?>)</span>
+                        </li>
+                            <?php
+                        }
+                        ?>
                     </ul>
                 </div>
 

@@ -10,6 +10,12 @@ class IndexController extends BaseController{
 
     public function indexAction(){
         $articleModel = ModelFactory::getModel("ArticleModel");
+        //获取阅读量排行榜
+        $watchSize = 5;  //显示的内容数量
+        $watchList = $articleModel->watchList($watchSize);
+        //获取点赞排行榜
+        $likeSize = 5;  //显示的内容数量
+        $likeList = $articleModel->likeList($likeSize);
 
          require VIEW_PATH."index.php";
     }
