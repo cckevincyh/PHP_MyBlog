@@ -231,4 +231,62 @@ class ArticleModel extends BaseModel {
         return $arr;
     }
 
+    /**
+     * 搜索
+     * @param $search
+     * @param $pageCode
+     * @param $pageSize
+     * @return array
+     */
+    public function getArticleBySearch($search,$pageCode,$pageSize){
+        $page = ($pageCode - 1) * $pageSize;
+        $sql = "SELECT tb_article.aid,tb_article.mid,tb_article.page_view,tb_article.img,tb_article.like_num,
+                tb_article.tid,tb_article.atitle,tb_article.acontent,tb_article.atime,tb_myinfo.mname,tb_type.tname
+                FROM tb_article,tb_type,tb_myinfo 
+                WHERE tb_myinfo.mid = tb_article.mid 
+                and tb_article.tid = tb_type.tid and tb_article.atitle LIKE '%$search%'
+                limit $page,$pageSize";
+        $arr = array();
+        if(!empty($pageCode) && !empty($pageSize)){
+            $stmt = $this->_dao->query($sql);
+            while (  $result = $stmt->fetch(PDO::FETCH_ASSOC) ){
+                $result['acontent'] = urldecode($result['acontent']);   //URL解码，解出来是带有样式的html文本
+                //strip_tags — 从字符串中去除 HTML 和 PHP 标记
+                $content = strip_tags($result['acontent']);   //得到存文本的内容
+                //对这些上面的博文需要进行特殊处理，限制其显示长度，长度限制为125个长度，多余的用...代替
+                //string substr ( string $string , int $start [, int $length ] ) 返回字符串 string 由 start 和 length 参数指定的子字符串。
+                if(mb_strlen($content,'UTF-8')>125){
+                    $content = mb_substr($content,0,124,"UTF-8");
+                    $content .="....";
+                }
+                $result['content'] = $content;
+                //对标题的也是需要限制的,长度限制为45，多余的用...代替
+                $title = $result['atitle'];
+                if(mb_strlen($title,'UTF-8')>45){
+                    $title = mb_substr($title,0,44,"UTF-8");
+                    $title .="....";
+                }
+                $result['atitle'] = $title;
+
+                $arr[] = $result;
+            }
+            $pageBean = array();   //装载分页信息
+            //获取总记录数
+            $sql = "SELECT count(*) FROM tb_article WHERE atitle LIKE '%$search%'";
+            $stmt = $this->_dao->query($sql);
+            $pageBean['totalRecord'] = $stmt->fetchColumn();//得到总记录数
+            $tp =  (int)($pageBean['totalRecord'] / $pageSize);
+            $pageBean['totaPage'] = $pageBean['totalRecord']  % $pageSize == 0 ? $tp : $tp + 1;  //得到总页数
+            $pageBean['pageCode'] = $pageCode; //当前页码
+            $pageBean['pageSize'] = $pageSize; //每页记录数
+            if(!empty($search)){
+                $pageBean['url'] = "c=Article&a=search&search=$search";
+            }else{
+                $pageBean['url'] = "c=Article&a=search";
+            }
+            $arr['pageBean'] = $pageBean;
+        }
+        return $arr;
+    }
+
 }

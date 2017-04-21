@@ -106,6 +106,21 @@ class ArticleController extends BaseController {
 
 
 
+    /**
+     * 后台首页搜索
+     */
+    public function searchAction(){
 
+        $pageCode = @$_GET['pageCode'];
+        if (empty($pageCode)) {
+            $pageCode = 1;
+        }
+        $pageSize = 3;
+
+        $search = @$_REQUEST['search'];
+        $articleModel = ModelFactory::getModel("ArticleModel");
+        $result = $articleModel->getArticleBySearch($search,$pageCode,$pageSize);
+        require VIEW_PATH."blog_content.php";
+    }
 
 }

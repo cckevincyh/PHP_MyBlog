@@ -40,16 +40,16 @@
                     </ul>
                 </div>
 
-
+            <form action="/MyBlog/index.php?p=back&c=Article&a=search" method="post" target="center">
                 <div class="panel_Search">
                     <ul class="panel_head"><span>文章搜索</span></ul>
                     <ul class="panel_body">
-                        <span><input id="inputSearch" type="text" class="blogsearch" title="请输入关键字"></span>
-                        <input class="btnSubmit"  type="button" value="搜索" title="search in blog">
+                        <span><input id="inputSearch" type="text" name="search" class="blogsearch" title="请输入关键字"></span>
+                        <input class="btnSubmit"  type="submit" value="搜索" title="search in blog">
 
                     </ul>
                 </div>
-
+            </form>
 
                 <div class="panel_Click_Ranking">
                     <ul class="panel_head"><span>阅读排行</span></ul>
