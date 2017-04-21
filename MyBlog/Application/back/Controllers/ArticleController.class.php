@@ -70,6 +70,7 @@ class ArticleController extends BaseController {
         }
     }
 
+
     public  function deleteBlogAction(){
         $aid = @$_GET['id'];
         if(!empty($aid)){
@@ -77,6 +78,7 @@ class ArticleController extends BaseController {
             $result = $articleModel->deleteBlog($aid);
             if($result){
                 echo "删除成功";
+                //相应的博文数量需要减去
             }else{
                 echo "删除失败";
             }
@@ -84,6 +86,7 @@ class ArticleController extends BaseController {
             echo "删除失败,请重试";
         }
     }
+
 
 
 

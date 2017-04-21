@@ -33,7 +33,7 @@
 
                         ?>
                         <li class="panel_li">
-                            <a href="#" target="center"><?php echo $typeList[$i]['tname']?></a><span>(<?php echo $typeList[$i]['num']?>)</span>
+                            <a href="/MyBlog/index.php?c=Article&a=getArticleByType&type=<?php echo $typeList[$i]['tid']?>" target="center"><?php echo $typeList[$i]['tname']?></a><span>(<?php echo $typeList[$i]['num']?>)</span>
                         </li>
                             <?php
                         }
@@ -60,7 +60,7 @@
 
                         ?>
                             <li class="panel_li">
-                                <a href="#" ><?php echo $watchList[$i]['atitle']?></a><span>(<?php echo $watchList[$i]['page_view']?>)</span>
+                                <a href="/Myblog/index.php?a=blog_detail&id=<?php echo $watchList[$i]["aid"]?>" target="_blank" ><?php echo $watchList[$i]['atitle']?></a><span>(<?php echo $watchList[$i]['page_view']?>)</span>
                             </li>
                         <?php
                            }
@@ -78,7 +78,7 @@
 
                         ?>
                         <li class="panel_li">
-                            <a href="#" ><?php echo $likeList[$i]['atitle']?></a><span>(<?php echo $likeList[$i]['like_num']?>)</span>
+                            <a href="/Myblog/index.php?a=blog_detail&id=<?php echo $likeList[$i]["aid"]?>" target="_blank"><?php echo $likeList[$i]['atitle']?></a><span>(<?php echo $likeList[$i]['like_num']?>)</span>
                         </li>
                             <?php
                         }
