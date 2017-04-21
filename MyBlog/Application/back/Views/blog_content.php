@@ -23,13 +23,13 @@
         ?>
         <div class="blog-div">
             <div class="blog-img-box fl">
-                <a href="/Myblog/index.php?p=back&a=blog_detail" target="_blank">
+                <a href="/Myblog/index.php?p=back&a=blog_detail&id=<?php echo $result[$i]["aid"] ?>" target="_blank">
                     <img class="blog-list-img" src="<?php echo $result[$i]["img"] ?>" width="215" height="144" alt=" <?php echo $result[$i]["atitle"] ?>">
                 </a>
             </div>
             <div class="blog-content">
                 <h3 class="title-h3">
-                    <a href="/Myblog/index.php?p=back&a=blog_detail" target="_blank">
+                    <a href="/Myblog/index.php?p=back&a=blog_detail&id=<?php echo $result[$i]["aid"]?>" target="_blank">
                         <?php echo $result[$i]["atitle"] ?>
                     </a>
                 </h3>

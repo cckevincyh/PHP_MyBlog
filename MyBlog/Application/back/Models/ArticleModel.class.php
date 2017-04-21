@@ -18,7 +18,7 @@ class ArticleModel extends BaseModel {
                 tb_article.tid,tb_article.atitle,tb_article.acontent,tb_article.atime,tb_myinfo.mname,tb_type.tname
                 FROM tb_article,tb_type,tb_myinfo 
                 WHERE tb_myinfo.mid = tb_article.mid 
-                and tb_article.tid = tb_type.tid WHERE aid= ?";
+                AND tb_article.tid = tb_type.tid AND tb_article.aid= ?";
         $stmt = $this->_dao->prepare($sql);
         if(!empty($aid)){
             $stmt->bindValue(1,$aid);

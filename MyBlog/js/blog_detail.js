@@ -4,7 +4,7 @@
 
 
 //加入在线编辑器
-var addEditor;
+var editor;
 KindEditor.ready(function(K) {
     //在当前网页中，查找<textarea id = "blog_detail_content"></textarea>，并替换成kindeditor编辑器。
         editor = K.create('textarea[id="blog_detail_content"]', {
@@ -29,6 +29,29 @@ KindEditor.ready(function(K) {
 });
 
 
+
+function getBlogDetail(id) {
+    $.ajax({
+        type: 'GET',
+        url: '/MyBlog/index.php?p=back&c=Article&a=getBlogById&id='+id,
+        dataType:"json",
+        cache: false,
+        success: function (data) {
+            $("#title").text(data.atitle);
+            $("#postdate").text(data.atime);
+            $("#page_view").text("浏览 ("+data.page_view+")");
+            $("#like_num").text("点赞 ("+data.like_num+")");
+            $("#type").text(data.tname);
+            editor.html(data.acontent);
+           // alert(data);
+
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert("提交失败，请重试");
+        }
+    });
+
+}
 
 
 

@@ -35,6 +35,7 @@ class ArticleController extends BaseController {
         $result = $articleModel->getArticleById($aid);
         $result['acontent'] = urldecode($result['acontent']);
         echo json_encode($result);
+     //   require VIEW_PATH."blog_detail_content.php";
     }
 
     public function getLimitBlogsAction(){

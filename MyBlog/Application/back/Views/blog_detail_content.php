@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-CN" class="ax-vertical-centered">
 <head>
@@ -19,23 +20,26 @@
 <script charset="utf-8" src="/MyBlog/js/kindeditor-4.1.10/lang/zh_CN.js"></script>
 <script charset="utf-8" src="/MyBlog/js/blog_detail.js"></script>
 </head>
+<script>
 
+    getBlogDetail(<?php echo $id?>);
+</script>
 
 <body>
    
 		<div class="page-header">
-			<h1>页面标题实例</h1>
+			<h1 id="title"></h1>
 		</div>
 		<div class="blog-info">
-				<span class="link_postdate" title="发布时间">2017-04-03 13:42</span>
-				<span class="link_view" title="阅读次数">68人阅读</span>
-				<span class="link_like" title="点赞次数"> <a href="#">点赞</a>(0)</span>
+				<span class="link_postdate" title="发布时间" id="postdate"></span>
+				<span class="link_view" title="阅读次数" id="page_view"></span>
+				<span class="link_like" title="点赞次数" > <a href="#" id="like_num">点赞</a></span>
 		</div>
 		
 		 <hr>
 		<div class="category_div">
            <img src="/Myblog/img/category_icon.png">
-            <span>分类：</span> <span>框架学习</span>
+            <span>分类：</span> <span id="type"></span>
         </div>
         <hr>
         

@@ -25,10 +25,12 @@ class IndexController{
 
 
     public function blog_detailAction(){
+        $id = @$_GET['id'];
         require VIEW_PATH."blog_detail.php";
     }
 
     public function blog_detail_contentAction(){
+        $id = @$_GET['id'];
         require VIEW_PATH."blog_detail_content.php";
     }
 

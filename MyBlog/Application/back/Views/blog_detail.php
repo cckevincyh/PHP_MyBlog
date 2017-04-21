@@ -19,7 +19,7 @@
     </tr>
     <tr>
         <td>
-            <iframe class="blog_detail_content" src="/Myblog/index.php?p=back&a=blog_detail_content" frameborder="0" scrolling="no"></iframe>
+            <iframe class="blog_detail_content" src="/Myblog/index.php?p=back&a=blog_detail_content&id=<?php echo $id?>" frameborder="0" scrolling="no"></iframe>
         </td>
 
     </tr>
