@@ -45,6 +45,12 @@ class ArticleModel extends BaseModel {
     }
 
 
+    /**
+     * 分页显示博文
+     * @param $pageCode
+     * @param $pageSize
+     * @return array
+     */
     public function getLimitArticles($pageCode,$pageSize){
         $page = ($pageCode - 1) * $pageSize;
         $sql = "SELECT tb_article.aid,tb_article.mid,tb_article.page_view,tb_article.img,tb_article.like_num,
@@ -78,6 +84,10 @@ class ArticleModel extends BaseModel {
     }
 
 
+    /**
+     * 增加阅读量
+     * @param $aid
+     */
     public function addPageView($aid){
         $sql = "UPDATE tb_article SET page_view = page_view + 1 WHERE aid = ?";
         if(!empty($aid)){
@@ -88,6 +98,11 @@ class ArticleModel extends BaseModel {
     }
 
 
+    /**
+     * 点赞
+     * @param $aid
+     * @return bool
+     */
     public function likeById($aid){
         $sql = "UPDATE tb_article SET like_num = like_num + 1 WHERE aid = ?";
         if(!empty($aid)){
@@ -100,6 +115,11 @@ class ArticleModel extends BaseModel {
         }
     }
 
+    /**
+     * 前台的阅读排行列表的显示
+     * @param $size
+     * @return array
+     */
     public function watchList($size){
         $sql = "SELECT aid,atitle,page_view FROM tb_article ORDER  BY page_view DESC LIMIT 0,$size";
         $stmt = $this->_dao->query($sql);
@@ -110,6 +130,11 @@ class ArticleModel extends BaseModel {
         return $arr;
     }
 
+    /**
+     * 前台点赞排行的显示
+     * @param $size
+     * @return array
+     */
     public function likeList($size){
         $sql = "SELECT aid,atitle,like_num FROM tb_article ORDER  BY like_num DESC LIMIT 0,$size";
         $stmt = $this->_dao->query($sql);

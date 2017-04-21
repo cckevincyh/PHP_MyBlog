@@ -87,6 +87,11 @@ if($result['pageBean']['totaPage']<=5){
 
 ?>
 
+<?php
+//处理没有博文时候分页的显示
+        if(count($result)>1){
+ ?>
+
 
 
 <div class="pull-right"><!--右对齐--->
@@ -121,7 +126,9 @@ if($result['pageBean']['totaPage']<=5){
         <li><a href="/Myblog/index.php?<?php echo $result['pageBean']['url']?>&pageCode=<?php echo $result['pageBean']['totaPage']?>">尾页</a></li>
     </ul>
 </div>
-
+<?php
+        }
+?>
 
 </body>
 

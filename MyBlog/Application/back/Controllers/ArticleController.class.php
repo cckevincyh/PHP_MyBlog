@@ -77,8 +77,10 @@ class ArticleController extends BaseController {
             $articleModel = ModelFactory::getModel("ArticleModel");
             $result = $articleModel->deleteBlog($aid);
             if($result){
-                echo "删除成功";
                 //相应的博文数量需要减去
+                $myInfoModel = ModelFactory::getModel("MyInfoModel");
+                $myInfoModel->reduceBlogNum();
+                echo "删除成功";
             }else{
                 echo "删除失败";
             }

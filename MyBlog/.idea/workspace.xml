@@ -15,44 +15,26 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/front/Controllers/IndexController.class.php">
+      <file leaf-file-name="MyInfoModel.class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/back/Models/MyInfoModel.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="57" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArticleModel.class.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/front/Models/ArticleModel.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="151" column="47" lean-forward="false" selection-start-line="151" selection-start-column="47" selection-end-line="151" selection-end-column="47" />
+            <state relative-caret-position="941">
+              <caret line="97" column="56" lean-forward="false" selection-start-line="97" selection-start-column="56" selection-end-line="97" selection-end-column="56" />
               <folding>
-                <marker date="1492773582403" expanded="true" signature="261:646" ph="SELECT * FRO... tb_article" />
-                <marker date="1492773582403" expanded="true" signature="1015:1039" ph="SELECT * FRO... tb_article" />
-                <marker date="1492773582403" expanded="true" signature="1358:1751" ph="SELECT tb_ar... tb_article" />
-                <marker date="1492773582403" expanded="true" signature="2311:2342" ph="SELECT count... tb_article" />
-                <marker date="1492773582403" expanded="true" signature="2934:2995" ph="UPDATE tb_ar... " />
-                <marker date="1492773582403" expanded="true" signature="3220:3279" ph="UPDATE tb_ar... " />
-                <marker date="1492773582403" expanded="true" signature="3572:3649" ph="SELECT aid,a... tb_article" />
-                <marker date="1492773582403" expanded="true" signature="3905:3980" ph="SELECT aid,a... tb_article" />
-                <marker date="1492773582403" expanded="true" signature="4433:4843" ph="SELECT tb_ar... tb_article" />
-                <marker date="1492773582403" expanded="true" signature="5495:5526" ph="SELECT count... tb_article" />
-                <marker date="1492773582403" expanded="true" signature="5495:5538" ph="SELECT count... tb_article" />
+                <marker date="1492774280237" expanded="true" signature="222:259" ph="SELECT * FRO... tb_myinfo" />
+                <marker date="1492774280237" expanded="true" signature="228:259" ph="UPDATE tb_my... " />
+                <marker date="1492774280237" expanded="true" signature="652:736" ph="INSERT INTO tb_myinfo... " />
+                <marker date="1492774280237" expanded="true" signature="1415:1499" ph="UPDATE tb_my... " />
+                <marker date="1492774280237" expanded="true" signature="1421:1432" ph="update tb_my... " />
+                <marker date="1492774280237" expanded="true" signature="1421:1499" ph="update tb_my... " />
+                <marker date="1492774280237" expanded="true" signature="2037:2097" ph="UPDATE tb_my... " />
+                <marker date="1492774280237" expanded="true" signature="2043:2058" ph="update tb_my... " />
+                <marker date="1492774280237" expanded="true" signature="2043:2067" ph="update tb_my... " />
+                <marker date="1492774280237" expanded="true" signature="2043:2097" ph="update tb_my... " />
+                <marker date="1492774280237" expanded="true" signature="2312:2370" ph="UPDATE tb_my... " />
+                <marker date="1492774280237" expanded="true" signature="2318:2370" ph="update tb_my... " />
+                <marker date="1492774280237" expanded="true" signature="2537:2595" ph="UPDATE tb_my... " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArticleController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/front/Controllers/ArticleController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="60" column="5" lean-forward="false" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -79,7 +61,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/blog_type.css" />
         <option value="$PROJECT_DIR$/Application/back/Views/left_panel.php" />
         <option value="$PROJECT_DIR$/Application/front/Views/right_panel.php" />
         <option value="$PROJECT_DIR$/js/getMyInfo.js" />
@@ -108,13 +89,10 @@
         <option value="$PROJECT_DIR$/Application/back/Views/update_blog_detail_content.php" />
         <option value="$PROJECT_DIR$/Application/back/Models/ArticleModel.class.php" />
         <option value="$PROJECT_DIR$/js/delete_blog.js" />
-        <option value="$PROJECT_DIR$/Application/back/Views/blog_content.php" />
-        <option value="$PROJECT_DIR$/Application/front/Views/blog_content.php" />
         <option value="$PROJECT_DIR$/Application/back/Controllers/IndexController.class.php" />
         <option value="$PROJECT_DIR$/Application/front/Views/blog_detail.php" />
         <option value="$PROJECT_DIR$/Application/back/Views/blog.php" />
         <option value="$PROJECT_DIR$/Application/front/Views/blog.php" />
-        <option value="$PROJECT_DIR$/Application/back/Controllers/MyInfoController.class.php" />
         <option value="$PROJECT_DIR$/Application/front/Controllers/MyInfoController.class.php" />
         <option value="$PROJECT_DIR$/Application/front/Models/MyInfoModel.class.php" />
         <option value="$PROJECT_DIR$/js/getImg.js" />
@@ -127,9 +105,13 @@
         <option value="$PROJECT_DIR$/Application/front/Controllers/IndexController.class.php" />
         <option value="$PROJECT_DIR$/Application/front/Views/index.php" />
         <option value="$PROJECT_DIR$/Application/front/Models/ArticleTypeModel.class.php" />
-        <option value="$PROJECT_DIR$/Application/back/Controllers/ArticleController.class.php" />
         <option value="$PROJECT_DIR$/Application/front/Controllers/ArticleController.class.php" />
         <option value="$PROJECT_DIR$/Application/front/Models/ArticleModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/back/Controllers/ArticleController.class.php" />
+        <option value="$PROJECT_DIR$/Application/back/Controllers/MyInfoController.class.php" />
+        <option value="$PROJECT_DIR$/Application/back/Models/MyInfoModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/back/Views/blog_content.php" />
+        <option value="$PROJECT_DIR$/Application/front/Views/blog_content.php" />
       </list>
     </option>
   </component>
@@ -185,48 +167,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlog" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlog" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlog" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Application" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -256,6 +196,46 @@
               <option name="myItemId" value="front" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyBlog" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="back" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyBlog" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="back" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Models" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
@@ -275,25 +255,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="front" />
+              <option name="myItemId" value="back" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlog" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -403,15 +369,15 @@
       <workItem from="1492591650253" duration="16094000" />
       <workItem from="1492649869327" duration="5866000" />
       <workItem from="1492659202252" duration="25692000" />
-      <workItem from="1492737454629" duration="23110000" />
+      <workItem from="1492737454629" duration="23959000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192477000" />
+    <option name="totallyTimeSpent" value="193326000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22604166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -529,14 +495,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/front/Views/blog_content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="21" column="52" lean-forward="false" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/back/Views/blog_detail_content.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-43">
@@ -611,14 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/back/Controllers/MyInfoController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -718,39 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/back/Models/MyInfoModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="687">
-          <caret line="89" column="30" lean-forward="false" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="30" />
-          <folding>
-            <marker date="1492497252143" expanded="true" signature="222:259" ph="SELECT * FRO... tb_myinfo" />
-            <marker date="1492497252143" expanded="true" signature="228:259" ph="UPDATE tb_my... " />
-            <marker date="1492497252143" expanded="true" signature="652:736" ph="INSERT INTO tb_myinfo... " />
-            <marker date="1492497252143" expanded="true" signature="1415:1499" ph="UPDATE tb_my... " />
-            <marker date="1492497252143" expanded="true" signature="1421:1432" ph="update tb_my... " />
-            <marker date="1492497252143" expanded="true" signature="1421:1499" ph="update tb_my... " />
-            <marker date="1492497252143" expanded="true" signature="2037:2097" ph="UPDATE tb_my... " />
-            <marker date="1492497252143" expanded="true" signature="2043:2058" ph="update tb_my... " />
-            <marker date="1492497252143" expanded="true" signature="2043:2067" ph="update tb_my... " />
-            <marker date="1492497252143" expanded="true" signature="2043:2097" ph="update tb_my... " />
-            <marker date="1492497252143" expanded="true" signature="2312:2370" ph="UPDATE tb_my... " />
-            <marker date="1492497252143" expanded="true" signature="2318:2370" ph="update tb_my... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/front/Models/MyInfoModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="43" column="23" lean-forward="true" selection-start-line="40" selection-start-column="7" selection-end-line="43" selection-end-column="23" />
-          <folding>
-            <marker date="1492757798739" expanded="true" signature="222:258" ph="SELECT * FRO... tb_myinfo" />
-            <marker date="1492757798739" expanded="true" signature="466:509" ph="SELECT head_... tb_myinfo" />
-            <marker date="1492757798739" expanded="true" signature="766:826" ph="UPDATE tb_my... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/back/Views/left_panel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -844,24 +761,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/back/Views/blog_content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="119" lean-forward="false" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="119" />
-          <folding>
-            <marker date="1492756397792" expanded="true" signature="1935:1976" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/back/Views/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="57" lean-forward="true" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/blog_index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
@@ -874,14 +773,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
           <caret line="35" column="118" lean-forward="false" selection-start-line="35" selection-start-column="118" selection-end-line="35" selection-end-column="118" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/back/Controllers/ArticleController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -907,7 +798,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/front/Controllers/ArticleController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
+        <state relative-caret-position="1320">
           <caret line="60" column="5" lean-forward="false" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
           <folding />
         </state>
@@ -915,20 +806,96 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/front/Models/ArticleModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="151" column="47" lean-forward="false" selection-start-line="151" selection-start-column="47" selection-end-line="151" selection-end-column="47" />
+        <state relative-caret-position="-235">
+          <caret line="151" column="23" lean-forward="true" selection-start-line="151" selection-start-column="23" selection-end-line="151" selection-end-column="23" />
           <folding>
-            <marker date="1492773582403" expanded="true" signature="261:646" ph="SELECT * FRO... tb_article" />
-            <marker date="1492773582403" expanded="true" signature="1015:1039" ph="SELECT * FRO... tb_article" />
-            <marker date="1492773582403" expanded="true" signature="1358:1751" ph="SELECT tb_ar... tb_article" />
-            <marker date="1492773582403" expanded="true" signature="2311:2342" ph="SELECT count... tb_article" />
-            <marker date="1492773582403" expanded="true" signature="2934:2995" ph="UPDATE tb_ar... " />
-            <marker date="1492773582403" expanded="true" signature="3220:3279" ph="UPDATE tb_ar... " />
-            <marker date="1492773582403" expanded="true" signature="3572:3649" ph="SELECT aid,a... tb_article" />
-            <marker date="1492773582403" expanded="true" signature="3905:3980" ph="SELECT aid,a... tb_article" />
-            <marker date="1492773582403" expanded="true" signature="4433:4843" ph="SELECT tb_ar... tb_article" />
-            <marker date="1492773582403" expanded="true" signature="5495:5526" ph="SELECT count... tb_article" />
-            <marker date="1492773582403" expanded="true" signature="5495:5538" ph="SELECT count... tb_article" />
+            <marker date="1492773863774" expanded="true" signature="261:646" ph="SELECT * FRO... tb_article" />
+            <marker date="1492773863774" expanded="true" signature="1015:1039" ph="SELECT * FRO... tb_article" />
+            <marker date="1492773863774" expanded="true" signature="1457:1850" ph="SELECT tb_ar... tb_article" />
+            <marker date="1492773863774" expanded="true" signature="2410:2441" ph="SELECT count... tb_article" />
+            <marker date="1492773863774" expanded="true" signature="3081:3142" ph="UPDATE tb_ar... " />
+            <marker date="1492773863774" expanded="true" signature="3432:3491" ph="UPDATE tb_ar... " />
+            <marker date="1492773863774" expanded="true" signature="3861:3938" ph="SELECT aid,a... tb_article" />
+            <marker date="1492773863774" expanded="true" signature="4268:4343" ph="SELECT aid,a... tb_article" />
+            <marker date="1492773863774" expanded="true" signature="4796:5206" ph="SELECT tb_ar... tb_article" />
+            <marker date="1492773863774" expanded="true" signature="5858:5889" ph="SELECT count... tb_article" />
+            <marker date="1492773863774" expanded="true" signature="5858:5901" ph="SELECT count... tb_article" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/front/Models/MyInfoModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="43" column="23" lean-forward="true" selection-start-line="40" selection-start-column="7" selection-end-line="43" selection-end-column="23" />
+          <folding>
+            <marker date="1492757798739" expanded="true" signature="222:258" ph="SELECT * FRO... tb_myinfo" />
+            <marker date="1492757798739" expanded="true" signature="466:509" ph="SELECT head_... tb_myinfo" />
+            <marker date="1492757798739" expanded="true" signature="766:826" ph="UPDATE tb_my... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/back/Views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1261">
+          <caret line="9" column="57" lean-forward="true" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/front/Views/blog_content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/back/Views/blog_content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="130" selection-end-column="2" />
+          <folding>
+            <marker date="1492774454539" expanded="true" signature="1935:1976" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/back/Controllers/MyInfoController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/back/Controllers/ArticleController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="845">
+          <caret line="81" column="43" lean-forward="false" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/back/Models/MyInfoModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="941">
+          <caret line="97" column="56" lean-forward="false" selection-start-line="97" selection-start-column="56" selection-end-line="97" selection-end-column="56" />
+          <folding>
+            <marker date="1492774280237" expanded="true" signature="222:259" ph="SELECT * FRO... tb_myinfo" />
+            <marker date="1492774280237" expanded="true" signature="228:259" ph="UPDATE tb_my... " />
+            <marker date="1492774280237" expanded="true" signature="652:736" ph="INSERT INTO tb_myinfo... " />
+            <marker date="1492774280237" expanded="true" signature="1415:1499" ph="UPDATE tb_my... " />
+            <marker date="1492774280237" expanded="true" signature="1421:1432" ph="update tb_my... " />
+            <marker date="1492774280237" expanded="true" signature="1421:1499" ph="update tb_my... " />
+            <marker date="1492774280237" expanded="true" signature="2037:2097" ph="UPDATE tb_my... " />
+            <marker date="1492774280237" expanded="true" signature="2043:2058" ph="update tb_my... " />
+            <marker date="1492774280237" expanded="true" signature="2043:2067" ph="update tb_my... " />
+            <marker date="1492774280237" expanded="true" signature="2043:2097" ph="update tb_my... " />
+            <marker date="1492774280237" expanded="true" signature="2312:2370" ph="UPDATE tb_my... " />
+            <marker date="1492774280237" expanded="true" signature="2318:2370" ph="update tb_my... " />
+            <marker date="1492774280237" expanded="true" signature="2537:2595" ph="UPDATE tb_my... " />
           </folding>
         </state>
       </provider>

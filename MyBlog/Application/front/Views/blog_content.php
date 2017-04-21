@@ -75,7 +75,10 @@ if($result['pageBean']['totaPage']<=5){
 
 ?>
 
-
+<?php
+//处理没有博文时候分页的显示
+if(count($result)>1){
+?>
 
 <div class="pull-right"><!--右对齐--->
     <ul class="pagination _pagination">
@@ -110,7 +113,9 @@ if($result['pageBean']['totaPage']<=5){
     </ul>
 </div>
 
-
+<?php
+}
+?>
 </body>
 
 </html>

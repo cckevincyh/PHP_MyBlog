@@ -94,5 +94,12 @@ class MyInfoModel extends BaseModel{
         return $result;
     }
 
+    public function reduceBlogNum(){
+        $sql = "UPDATE tb_myinfo SET blog_num = blog_num - 1 WHERE mid = 1";
+        $stmt = $this->_dao->prepare($sql);
+        $result = $stmt->execute();
+        return $result;
+    }
+
 }
 
