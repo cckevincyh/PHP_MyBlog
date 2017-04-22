@@ -5,15 +5,15 @@
 	<title>个人博客</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/MyBlog/css/bootstrap.min.css">
-<link rel="stylesheet" href="/MyBlog/css/bootstrap-theme.min.css">
-<script src="/MyBlog/js/bootstrap.min.js"></script>
-<script src="/MyBlog/jQuery/jquery-3.1.1.min.js"></script>
-<script src="/MyBlog/js/bootstrap-dropdown.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<script src="js/bootstrap.min.js"></script>
+<script src="jQuery/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap-dropdown.min.js"></script>
 
-<script src="/MyBlog/js/getImg.js"></script>
-<script src="/MyBlog/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="/MyBlog/css/blog_navbar.css">
+<script src="js/getImg.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/blog_navbar.css">
 
 
 
@@ -25,11 +25,11 @@
 <nav class="navbar navbar-inverse blog_navbar" role="navigation">
     <div class="container-fluid">
     <div class="navbar-header">
-        <a class="navbar-brand blog_brand" href="/MyBlog/index.php" target="_parent">我的个人博客</a>
+        <a class="navbar-brand blog_brand" href="index.php" target="_parent">我的个人博客</a>
     </div>
     <div>
         <ul class="nav navbar-nav">
-            <li class="_active"><a href="/MyBlog/index.php" class="a_navbar_text" target="_parent">首页</a></li>
+            <li class="_active"><a href="index.php" class="a_navbar_text" target="_parent">首页</a></li>
         </ul>
          <ul class="nav navbar-nav navbar-right"> 
 			 	 <li class="dropdown">

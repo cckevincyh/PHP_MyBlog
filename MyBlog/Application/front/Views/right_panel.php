@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <title>123</title>
-<link href="/MyBlog/css/common.css" rel="stylesheet">
-<link href="/MyBlog/css/right_panel.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/right_panel.css" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/MyBlog/css/bootstrap.min.css">
-<link rel="stylesheet" href="/MyBlog/css/bootstrap-theme.min.css">
-<script src="/MyBlog/js/bootstrap.min.js"></script>
-<script src="/MyBlog/jQuery/jquery-3.1.1.min.js"></script>
-<script src="/MyBlog/js/bootstrap-dropdown.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<script src="js/bootstrap.min.js"></script>
+<script src="jQuery/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap-dropdown.min.js"></script>
 
-<script src="/MyBlog/js/jquery.min.js"></script>
-<script src="/MyBlog/js/bootstrap.min.js"></script>
-<script src="/MyBlog/js/getMyInfo.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/getMyInfo.js"></script>
 </head>
 
 

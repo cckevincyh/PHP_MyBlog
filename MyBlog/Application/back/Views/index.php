@@ -6,8 +6,8 @@
 	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <link href="css/blog_index.css" rel="stylesheet">
-<link href="/MyBlog/css/common.css" rel="stylesheet">
-<link href="/MyBlog/css/left_panel.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/left_panel.css" rel="stylesheet">
 </head>
 
 
@@ -16,7 +16,7 @@
 <table class="table" align="center" style="height:auto">
 	 <tr>
 		 <td colspan="3" >
-			<iframe class="blog_top" src="Application\back\Views\blog.php" frameborder="0" scrolling="no"></iframe>
+			<iframe class="blog_top" src="index.php?p=back&a=blog_top" frameborder="0" scrolling="no"></iframe>
 		 </td>
  	</tr>
     <tr>
@@ -32,7 +32,7 @@
 
                             ?>
                             <li class="panel_li">
-                                <a href="/MyBlog/index.php?c=Article&a=getArticleByType&type=<?php echo $typeList[$i]['tid']?>" target="center"><?php echo $typeList[$i]['tname']?></a><span>(<?php echo $typeList[$i]['num']?>)</span>
+                                <a href="index.php?c=Article&a=getArticleByType&type=<?php echo $typeList[$i]['tid']?>" target="center"><?php echo $typeList[$i]['tname']?></a><span>(<?php echo $typeList[$i]['num']?>)</span>
                             </li>
                             <?php
                         }
@@ -40,7 +40,7 @@
                     </ul>
                 </div>
 
-            <form action="/MyBlog/index.php?p=back&c=Article&a=search" method="post" target="center">
+            <form action="index.php?p=back&c=Article&a=search" method="post" target="center">
                 <div class="panel_Search">
                     <ul class="panel_head"><span>文章搜索</span></ul>
                     <ul class="panel_body">
@@ -59,7 +59,7 @@
 
                             ?>
                             <li class="panel_li">
-                                <a href="/Myblog/index.php?a=blog_detail&id=<?php echo $watchList[$i]["aid"]?>" target="_blank" ><?php echo $watchList[$i]['atitle']?></a><span>(<?php echo $watchList[$i]['page_view']?>)</span>
+                                <a href="index.php?a=blog_detail&id=<?php echo $watchList[$i]["aid"]?>" target="_blank" ><?php echo $watchList[$i]['atitle']?></a><span>(<?php echo $watchList[$i]['page_view']?>)</span>
                             </li>
                             <?php
                         }
@@ -77,7 +77,7 @@
 
                             ?>
                             <li class="panel_li">
-                                <a href="/Myblog/index.php?a=blog_detail&id=<?php echo $likeList[$i]["aid"]?>" target="_blank"><?php echo $likeList[$i]['atitle']?></a><span>(<?php echo $likeList[$i]['like_num']?>)</span>
+                                <a href="index.php?a=blog_detail&id=<?php echo $likeList[$i]["aid"]?>" target="_blank"><?php echo $likeList[$i]['atitle']?></a><span>(<?php echo $likeList[$i]['like_num']?>)</span>
                             </li>
                             <?php
                         }
@@ -88,10 +88,10 @@
             </div>
 		 </td>
 		 <td width="60%">
-			<iframe class="blog_center"  name="center" src="/MyBlog/index.php?p=back&c=Article&a=getLimitBlogs" frameborder="0" scrolling="no"></iframe>
+			<iframe class="blog_center"  name="center" src="index.php?p=back&c=Article&a=getLimitBlogs" frameborder="0" scrolling="no"></iframe>
 		 </td>
 		 <td width="20%">
-			<iframe class="blog_right"  src="Application\back\Views\right_panel.php" frameborder="0" scrolling="no"></iframe>
+			<iframe class="blog_right"  src="index.php?p=back&a=blog_right" frameborder="0" scrolling="no"></iframe>
 		 </td>
  	</tr>
      

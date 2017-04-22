@@ -8,6 +8,9 @@
 
 class IndexController extends BaseController{
 
+    /**
+     * 前台首页左侧的排行榜的加载
+     */
     public function indexAction(){
         $articleModel = ModelFactory::getModel("ArticleModel");
         //获取阅读量排行榜
@@ -22,12 +25,18 @@ class IndexController extends BaseController{
          require VIEW_PATH."index.php";
     }
 
+    /**
+     * 博客详情页面的加载
+     */
     public function blog_detailAction(){
         $id = @$_GET['id'];
         require VIEW_PATH."blog_detail.php";
     }
 
 
+    /**
+     * 博客详情内容的加载
+     */
     public function blog_detail_contentAction(){
         $id = @$_GET['id'];
         //该博文id的阅读量增加
@@ -36,4 +45,19 @@ class IndexController extends BaseController{
         require VIEW_PATH."blog_detail_content.php";
     }
 
+
+    /**
+     * 博客顶部的加载
+     */
+    public function blog_topAction(){
+        require VIEW_PATH."blog.php";
+    }
+
+
+    /**
+     * 博客右侧的加载
+     */
+    public function right_panelAction(){
+        require VIEW_PATH."right_panel.php";
+    }
 }

@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <title>个人博客</title>
-<link rel="stylesheet" href="/MyBlog/css/bootstrap.min.css">
-<link rel="stylesheet" href="/MyBlog/css/bootstrap-theme.min.css">
-<script src="/MyBlog/js/bootstrap.min.js"></script>
-<script src="/MyBlog/jQuery/jquery-3.1.1.min.js"></script>
-<script src="/MyBlog/js/bootstrap-dropdown.min.js"></script>
-<link href="/MyBlog/css/blog_content.css" rel="stylesheet">
-<link href="/MyBlog/css/common.css" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<script src="js/bootstrap.min.js"></script>
+<script src="jQuery/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap-dropdown.min.js"></script>
+<link href="css/blog_content.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
 </head>
 
 
@@ -19,13 +19,13 @@ for ($i = 0; $i<count($result)-1; $i++) {
     ?>
     <div class="blog-div">
         <div class="blog-img-box fl">
-            <a href="/Myblog/index.php?a=blog_detail&id=<?php echo $result[$i]["aid"] ?>" target="_blank">
+            <a href="index.php?a=blog_detail&id=<?php echo $result[$i]["aid"] ?>" target="_blank">
                 <img class="blog-list-img" src="<?php echo $result[$i]["img"] ?>" width="215" height="144" alt=" <?php echo $result[$i]["atitle"] ?>">
             </a>
         </div>
         <div class="blog-content">
             <h3 class="title-h3">
-                <a href="/Myblog/index.php?a=blog_detail&id=<?php echo $result[$i]["aid"]?>" target="_blank">
+                <a href="index.php?a=blog_detail&id=<?php echo $result[$i]["aid"]?>" target="_blank">
                     <?php echo $result[$i]["atitle"] ?>
                 </a>
             </h3>
@@ -83,8 +83,8 @@ if(count($result)>1){
 <div class="pull-right"><!--右对齐--->
     <ul class="pagination _pagination">
         <li class="disabled"><a href="#">第<?php echo $result['pageBean']['pageCode']?>页/共<?php echo $result['pageBean']['totaPage']?>页</a></li>
-        <li><a href="/Myblog/index.php?<?php echo $result['pageBean']['url']?>&pageCode=1">首页</a></li>
-        <li><a href="/Myblog/index.php?<?php echo $result['pageBean']['url']?>&pageCode=<?php echo ($result['pageBean']['pageCode']-1)<0 ? $result['pageBean']['pageCode'] : $result['pageBean']['pageCode']-1 ?>">&laquo;</a></li><!-- 上一页 -->
+        <li><a href="index.php?<?php echo $result['pageBean']['url']?>&pageCode=1">首页</a></li>
+        <li><a href="index.php?<?php echo $result['pageBean']['url']?>&pageCode=<?php echo ($result['pageBean']['pageCode']-1)<0 ? $result['pageBean']['pageCode'] : $result['pageBean']['pageCode']-1 ?>">&laquo;</a></li><!-- 上一页 -->
 
         <?php
         //循环显示页码列表
@@ -99,7 +99,7 @@ if(count($result)>1){
             }else{
                 ?>
 
-                <li><a href="/Myblog/index.php?<?php echo $result['pageBean']['url']?>&pageCode=<?php echo $i?>"><?php echo $i?></a></li>
+                <li><a href="index.php?<?php echo $result['pageBean']['url']?>&pageCode=<?php echo $i?>"><?php echo $i?></a></li>
                 <?php
             }
         }
@@ -107,9 +107,9 @@ if(count($result)>1){
 
 
 
-        <li><a href="/Myblog/index.php?<?php echo $result['pageBean']['url']?>&pageCode=<?php echo ($result['pageBean']['pageCode']+1)> $result['pageBean']['totaPage'] ? $result['pageBean']['totaPage'] : $result['pageBean']['pageCode']+1?>" >&raquo;</a></li>
+        <li><a href="index.php?<?php echo $result['pageBean']['url']?>&pageCode=<?php echo ($result['pageBean']['pageCode']+1)> $result['pageBean']['totaPage'] ? $result['pageBean']['totaPage'] : $result['pageBean']['pageCode']+1?>" >&raquo;</a></li>
 
-        <li><a href="/Myblog/index.php?<?php echo $result['pageBean']['url']?>&pageCode=<?php echo $result['pageBean']['totaPage']?>">尾页</a></li>
+        <li><a href="index.php?<?php echo $result['pageBean']['url']?>&pageCode=<?php echo $result['pageBean']['totaPage']?>">尾页</a></li>
     </ul>
 </div>
 
