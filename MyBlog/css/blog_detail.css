@@ -30,14 +30,14 @@ h1 {
 }
 
 .link_postdate{
-	background-image:url(img/postdate_img.png);
+	background-image:url(/Myblog/img/postdate_img.png);
     background-repeat: no-repeat;
     padding-left: 20px;
 	margin-right: 20px;
 }
 
 .link_view{
-	background-image:url(img/view_img.png);
+	background-image:url(/Myblog/img/view_img.png);
     background-repeat: no-repeat;
     padding-left: 20px;
 	margin-right: 20px;
@@ -45,21 +45,21 @@ h1 {
 
 
 .link_comments{
-	background-image:url(img/comments_img.png);
+	background-image:url(/Myblog/img/comments_img.png);
     background-repeat: no-repeat;
     padding-left: 20px;
 	margin-right: 20px;
 }
 
 .link_like{
-	background-image:url(img/like_img.png);
+	background-image:url(/Myblog/img/like_img.png);
     background-repeat: no-repeat;
     padding-left: 20px;
 	margin-right: 20px;
 }
 
 .link_like_on{
-    background-image:url(img/like_img_on.png);
+    background-image:url(/Myblog/img/like_img_on.png);
     background-repeat: no-repeat;
     padding-left: 20px;
     margin-right: 20px;

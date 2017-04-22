@@ -45,7 +45,7 @@
                             </tr>
                             </thead>
                             <?php
-                                if(count($result)>0){
+                                if(count($result)>1){
                                    for($i = 0; $i<count($result)-1;$i++){
 
                             ?>
@@ -94,40 +94,55 @@
 
                         ?>
 
+            <?php
+             if(count($result)>1) {
+                 ?>
+
+                 <div class="pull-right"><!--右对齐--->
+                     <ul class="pagination _pagination">
+                         <li class="disabled"><a href="#">第<?php echo $result['pageBean']['pageCode'] ?>
+                                 页/共<?php echo $result['pageBean']['totaPage'] ?>页</a></li>
+                         <li><a href="index.php?<?php echo $result['pageBean']['url'] ?>&pageCode=1">首页</a></li>
+                         <li>
+                             <a href="index.php?<?php echo $result['pageBean']['url'] ?>&pageCode=<?php echo ($result['pageBean']['pageCode'] - 1) < 0 ? $result['pageBean']['pageCode'] : $result['pageBean']['pageCode'] - 1 ?>">&laquo;</a>
+                         </li><!-- 上一页 -->
+
+                         <?php
+                         //循环显示页码列表
+                         for ($i = $begin; $i <= $end; $i++) {
+                             //如果是当前页则设置无法点击超链接
+                             if ($i == $result['pageBean']['pageCode']) {
 
 
-                        <div class="pull-right"><!--右对齐--->
-                            <ul class="pagination _pagination">
-                                <li class="disabled"><a href="#">第<?php echo $result['pageBean']['pageCode']?>页/共<?php echo $result['pageBean']['totaPage']?>页</a></li>
-                                <li><a href="index.php?<?php echo $result['pageBean']['url']?>&pageCode=1">首页</a></li>
-                                <li><a href="index.php?<?php echo $result['pageBean']['url']?>&pageCode=<?php echo ($result['pageBean']['pageCode']-1)<0 ? $result['pageBean']['pageCode'] : $result['pageBean']['pageCode']-1 ?>">&laquo;</a></li><!-- 上一页 -->
-
-                                <?php
-                                    //循环显示页码列表
-                                    for($i = $begin; $i<=$end; $i++){
-                                        //如果是当前页则设置无法点击超链接
-                                        if($i == $result['pageBean']['pageCode']){
-
-
-                                ?>
-                                              <li class="active"><a><?php echo $i?></a><li>
-                                <?php
-                                        }else{
+                                 ?>
+                                 <li class="active"><a><?php echo $i ?></a><li>
+                                 <?php
+                             } else {
                                  ?>
 
-                                            <li><a href="index.php?<?php echo $result['pageBean']['url']?>&pageCode=<?php echo $i?>"><?php echo $i?></a></li>
+                                 <li>
+                                     <a href="index.php?<?php echo $result['pageBean']['url'] ?>&pageCode=<?php echo $i ?>"><?php echo $i ?></a>
+                                 </li>
                                  <?php
-                                          }
-                                     }
-                                ?>
+                             }
+                         }
+                         ?>
 
 
+                         <li>
+                             <a href="index.php?<?php echo $result['pageBean']['url'] ?>&pageCode=<?php echo ($result['pageBean']['pageCode'] + 1) > $result['pageBean']['totaPage'] ? $result['pageBean']['totaPage'] : $result['pageBean']['pageCode'] + 1 ?>">&raquo;</a>
+                         </li>
 
-                                <li><a href="index.php?<?php echo $result['pageBean']['url']?>&pageCode=<?php echo ($result['pageBean']['pageCode']+1)> $result['pageBean']['totaPage'] ? $result['pageBean']['totaPage'] : $result['pageBean']['pageCode']+1?>" >&raquo;</a></li>
+                         <li>
+                             <a href="index.php?<?php echo $result['pageBean']['url'] ?>&pageCode=<?php echo $result['pageBean']['totaPage'] ?>">尾页</a>
+                         </li>
+                     </ul>
+                 </div>
 
-                                <li><a href="index.php?<?php echo $result['pageBean']['url']?>&pageCode=<?php echo $result['pageBean']['totaPage']?>">尾页</a></li>
-                            </ul>
-                        </div>
+
+             <?php
+                 }
+              ?>
                     </div>
 
                 </div>
