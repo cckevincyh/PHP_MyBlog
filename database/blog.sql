@@ -1,7 +1,7 @@
 create database myblog;
 
 use myblog;
-
+ 
 create table tb_user(
 	`uid` int(2) NOT NULL AUTO_INCREMENT,
 	`username` varchar(20) BINARY NOT NULL,
