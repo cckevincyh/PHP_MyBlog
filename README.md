@@ -22,51 +22,51 @@
 
 接下来就是展示下界面和具体功能了：
 
-- 登录界面
+## - 登录界面
 
 ![image](https://github.com/cckevincyh/PHP_MyBlog/blob/master/blog_img/0.png)
 
-- 后台主界面
+## - 后台主界面
 
 ![image](https://github.com/cckevincyh/PHP_MyBlog/blob/master/blog_img/1.png)
 
-- 前台主界面
+## - 前台主界面
 
 ![image](https://github.com/cckevincyh/PHP_MyBlog/blob/master/blog_img/7.png)
 
-- 添加博文
+## - 添加博文
 
 ![image](https://github.com/cckevincyh/PHP_MyBlog/blob/master/blog_img/3.png)
 
-- 修改博文
+## - 修改博文
 
 ![image](https://github.com/cckevincyh/PHP_MyBlog/blob/master/blog_img/2.png)
 
-- 修改个人资料
+## - 修改个人资料
 
 ![image](https://github.com/cckevincyh/PHP_MyBlog/blob/master/blog_img/5.png)
 
-- 修改密码
+## - 修改密码
 
 ![image](https://github.com/cckevincyh/PHP_MyBlog/blob/master/blog_img/4.png)
 
-- 点赞
+## - 点赞
 
 
 ![image](https://github.com/cckevincyh/PHP_MyBlog/blob/master/blog_img/8.png)
 
 ![image](https://github.com/cckevincyh/PHP_MyBlog/blob/master/blog_img/9.png)
 
-- 前台的显示：
+## - 前台的显示：
 
 ![image](https://github.com/cckevincyh/PHP_MyBlog/blob/master/blog_img/10.png)
 
 
-- 分类查看博文
+## - 分类查看博文
 
 ![image](https://github.com/cckevincyh/PHP_MyBlog/blob/master/blog_img/11.png)
 
 
-- 分类的设置
+## - 分类的设置
 
 ![image](https://github.com/cckevincyh/PHP_MyBlog/blob/master/blog_img/6.png)
